@@ -1,4 +1,4 @@
-% Git test
+%従来のプロトコル(18Mbps→12Mbps)で再送したときと中継し伝送したときのスループットの比較
 clear;
 Rmin = [-82, -81, -79, -77, -74, -70, -66, -65]; % 最小受信感度 [dBm]
 TR = [6, 9, 12, 18, 24, 36, 48, 54]; % 伝送レート [Mbps]
@@ -25,25 +25,24 @@ slottime = 9; % ショートスロットタイム[μs]
 max_distance = 1000; % 最大距離 [m]
 N_max = 20; % 最大端末数
 
-% 選択された伝送レート (TR = 18 Mbps) に対応するインデックスを取得
-index = find(TR == 18);
-if isempty(index)
-    error('指定された伝送レートが見つかりません');
+ACK_t=zeros(size(Rmin));%ACKフレーム[μs]
+data_t=zeros(size(Rmin));%データフレーム[μs]
+d_max=zeros(size(Rmin));%各伝送レートでの最大送信距離(50mごと)[m]
+N_skip=zeros(size(Rmin));%各伝送レートでのスルー出来る最大の端末数
+
+for i = 1:length(Rmin)
+    Rmin_current = Rmin(i);
+    TR_current = TR(i);
+    databit_current = databit(i);
+    
+    % 最大伝送距離の計算
+    Lfs = Tp - Rmin_current; % 距離減衰 [dB]
+    d_max(i) = floor(((10^(Lfs / 20)) * c) / (4 * pi * f) / 50) * 50; % 最大伝送距離 [m]
+    N_skip(i) = d_max(i) / 50;
+    % フレームの計算
+    ACK_t(i) = PLCP_pre + (PLCPhead_sig + ceil((PLCPhead_ser + ACK + FCS + tail) / databit_current)) * 4;
+    data_t (i)= PLCP_pre + (PLCPhead_sig + ceil((PLCPhead_ser + MAC + LLC + packet + FCS + tail) / databit_current)) * 4;
 end
-
-% 必要な値を抽出
-Rmin_current = Rmin(index);
-TR_current = TR(index);
-databit_current = databit(index);
-
-% 最大伝送距離の計算
-Lfs = Tp - Rmin_current; % 距離減衰 [dB]
-d_max = floor(((10^(Lfs / 20)) * c) / (4 * pi * f) / 50) * 50; % 最大伝送距離 [m]
-N_skip = d_max / 50;
-
-% フレームの計算
-ACK_t = PLCP_pre + (PLCPhead_sig + ceil((PLCPhead_ser + ACK + FCS + tail) / databit_current)) * 4;
-data_t = PLCP_pre + (PLCPhead_sig + ceil((PLCPhead_ser + MAC + LLC + packet + FCS + tail) / databit_current)) * 4;
 
 % 条件1: スループット計算 (条件ごとのスループット)
 conditions = [1, 2, 3]; % 各条件での変更量
@@ -52,17 +51,17 @@ colors = ['r', 'g', 'b'];
 figure;
 hold on;
 for cond_idx = 1:length(conditions)
+    
     N = 0;
-    throughput_cond = [];
-    N_succsess_cond = [];
+    
     total_tt = 0;
     j = 1;
 
     while N <= N_max
-        N = N + N_skip;
-        total_tt = total_tt + (ACK_t + data_t + SIFS + backoff); % トータル時間
+        N = N + N_skip(4);
+        total_tt = total_tt + (ACK_t(4) + data_t (4)+ SIFS + backoff); % トータル時間
         N = N - conditions(cond_idx); % 条件ごとの端末減少
-        total_tt = total_tt + conditions(cond_idx) * slottime + ACK_t; % 通信成功
+        total_tt = total_tt + conditions(cond_idx) * slottime +  ACK_t(4); % 通信成功
 
         if N >= N_max
             throughput_cond(j) = packet / total_tt; % スループット [Mbps]
@@ -80,16 +79,16 @@ for cond_idx = 1:length(conditions)
 end
 
 % 条件2: スループット計算 (固定距離リスト)
-if mod(max_distance, d_max) == 0
-    distances = d_max:d_max:max_distance; 
+if mod(max_distance, d_max(4)) == 0
+    distances = d_max(4):d_max(4):max_distance; 
 else
-    distances = [d_max:d_max:max_distance max_distance];
+    distances = [d_max(4):d_max(4):max_distance max_distance];
 end
 
 throughput_fixed = zeros(size(distances));
 for j = 1:length(distances)
     D = distances(j);
-    total_tt = (ACK_t + data_t + SIFS + backoff) * (D / d_max) * 2; % トータル時間
+    total_tt = (ACK_t(4) + data_t(4) + SIFS + backoff) * (D / d_max(4)) +(ACK_t(3) + data_t(3) + SIFS + backoff) * (D / d_max(4)) ; %最初18Mbpsで送信し再送は12Mbps
     throughput_fixed(j) = packet / total_tt; % スループット [Mbps]
 end
 
