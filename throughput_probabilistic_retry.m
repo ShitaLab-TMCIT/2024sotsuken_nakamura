@@ -52,9 +52,7 @@ throughput_1 = zeros(num_trials, N_max);  % 試行回数と距離数に対応す
 throughput_2 = zeros(1, N_max);           % 平均スループット格納用
 N_succsess = zeros(1, N_max);             % 距離配列の事前確保
 
-% 図の設定
-figure;
-hold on;
+
 
 % パラメータ設定
 N = 0;                                    % 現在の端末数
@@ -104,9 +102,6 @@ end
 % スループットが0のデータポイントを除外
 valid_indices = throughput_2 > 0;  % 0より大きいスループットのみを抽出
 
-% プロット
-plot(N_succsess(valid_indices), throughput_2(valid_indices), '-o', 'Color', 'r', 'LineWidth', 1, 'MarkerSize', 4, 'DisplayName', sprintf('%dつ手前の端末で中継', 1));
-
 
 
 
@@ -149,12 +144,24 @@ plot(N_succsess(valid_indices), throughput_2(valid_indices), '-o', 'Color', 'r',
         throughput_4(j) = mean(throughput_3(:, j));
     end
     
-    % 結果をプロット
-    figure;
-    plot(distances, throughput_4, '-o', 'Color', 'k', 'LineWidth', 1, 'MarkerSize', 4, 'DisplayName', '従来のプロトコルで再送');
-    xlabel('距離 [m]');
-    ylabel('スループット [Mbps]');
-    title('距離とスループットの関係');
-    grid on;
-    legend show;
-    
+  % 結果をプロット
+figure;
+hold on;
+
+% グラフ1: 初めのスループットデータ
+plot(N_succsess(valid_indices), throughput_2(valid_indices), '-o', ...
+    'Color', 'r', 'LineWidth', 1, 'MarkerSize', 4, ...
+    'DisplayName', sprintf('%dつ手前の端末で中継', 1));
+
+% グラフ2: 距離ごとのスループットデータ
+plot(distances, throughput_4, '-o', ...
+    'Color', 'k', 'LineWidth', 1, 'MarkerSize', 4, ...
+    'DisplayName', '従来のプロトコルで再送');
+
+% ラベルとタイトル設定
+xlabel('距離 [m]');
+ylabel('スループット [Mbps]');
+title('距離とスループットの関係');
+grid on;
+legend show;
+hold off;
