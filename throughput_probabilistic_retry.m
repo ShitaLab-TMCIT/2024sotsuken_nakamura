@@ -22,9 +22,9 @@ DIFS = 34; % [μs]
 backoff = 101.5; % 平均バックオフ制御時間 [μs]
 slottime = 9; % ショートスロットタイム[μs]
 max_distance = 1000; % 最大距離 [m]
-N_max = 20; % 最大端末数
-error_rate=0.03;%通信が失敗する確率
-num_trials = 100;%試行回数
+N_max = max_distance/50; % 最大端末数
+error_rate=0.2;%通信が失敗する確率
+num_trials = 1000;%試行回数
 
 p= zeros(size(num_trials));%乱数
 ACK_t=zeros(size(Rmin));%ACKフレーム[μs]
@@ -85,8 +85,7 @@ for i = 1:num_trials  % 試行回数分ループ
         end
     end
 end
-disp(throughput_1);
-disp(size(throughput_1));
+
 
 % 各距離での平均スループット計算
 for j = 1:N_max
@@ -136,8 +135,7 @@ valid_indices = throughput_2 > 0;  % 0より大きいスループットのみを
         total_tt = 0;
     end
     
-    disp(throughput_3);
-    disp(size(throughput_3));
+
     
     % 各距離に対する平均スループットを計算
     for j = 1:length(distances)
@@ -151,7 +149,7 @@ hold on;
 % グラフ1: 初めのスループットデータ
 plot(N_succsess(valid_indices), throughput_2(valid_indices), '-o', ...
     'Color', 'r', 'LineWidth', 1, 'MarkerSize', 4, ...
-    'DisplayName', sprintf('%dつ手前の端末で中継', 1));
+    'DisplayName', sprintf('中継して伝送'));
 
 % グラフ2: 距離ごとのスループットデータ
 plot(distances, throughput_4, '-o', ...
@@ -161,7 +159,7 @@ plot(distances, throughput_4, '-o', ...
 % ラベルとタイトル設定
 xlabel('距離 [m]');
 ylabel('スループット [Mbps]');
-title('距離とスループットの関係');
+title(sprintf("エラー率 %1.f%% の時の距離とスループットの関係", error_rate * 100));
 grid on;
 legend show;
 hold off;
