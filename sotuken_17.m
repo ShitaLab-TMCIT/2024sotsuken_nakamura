@@ -61,7 +61,7 @@ for cond_idx = 1:length(conditions)
         N = N + N_skip(4);
         total_tt = total_tt + (ACK_t(4) + data_t (4)+ SIFS + backoff); % トータル時間
         N = N - conditions(cond_idx); % 条件ごとの端末減少
-        total_tt = total_tt + conditions(cond_idx) * slottime +  ACK_t(4); % 通信成功
+        total_tt = total_tt +(conditions(cond_idx)-1) * slottime +  ACK_t(4); % 通信成功
 
         if N >= N_max
             throughput_cond(j) = packet / total_tt; % スループット [Mbps]

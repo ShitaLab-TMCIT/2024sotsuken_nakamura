@@ -7,7 +7,7 @@ databit = [24, 36, 48, 72, 96, 144, 192, 216]; % OFDMシンボルごとのデー
 Tp = 10; % 送信電力 [dBm]
 f = 2.4 * 10^9; % 周波数 [Hz]
 c = 3 * 10^8; % 光速 [m/s]
-
+rng(0);  
 PLCP_pre = 16; % PLCPプリアンブル[μs]
 PLCPhead_sig = 1; % PLCPヘッダ（シグナル）[μs]
 PLCPhead_ser = 16; % PLCPヘッダ（サービス）[μs]
@@ -71,7 +71,7 @@ for i = 1:num_trials  % 試行回数分ループ
 
         if p < error_rate  % パケットが失敗した場合
             N = max(0, N - 1);  % 1つ手前に戻る
-            total_tt = total_tt + slottime + ACK_t(4); % 追加時間を加算
+            total_tt = total_tt  + ACK_t(4); % 追加時間を加算
         end
         
         % スループット記録および距離の記録
@@ -142,24 +142,34 @@ valid_indices = throughput_2 > 0;  % 0より大きいスループットのみを
         throughput_4(j) = mean(throughput_3(:, j));
     end
     
-  % 結果をプロット
-figure;
+
+
+% 結果をプロット
+figure('Position', [100, 100, 1000, 500]); 
 hold on;
 
 % グラフ1: 初めのスループットデータ
 plot(N_succsess(valid_indices), throughput_2(valid_indices), '-o', ...
-    'Color', 'r', 'LineWidth', 1, 'MarkerSize', 4, ...
-    'DisplayName', sprintf('中継して伝送'));
+    'Color', 'r', 'LineWidth', 2, 'MarkerSize', 8, 'MarkerFaceColor', 'r',...
+    'DisplayName', 'CTR方式');
 
 % グラフ2: 距離ごとのスループットデータ
-plot(distances, throughput_4, '-o', ...
-    'Color', 'k', 'LineWidth', 1, 'MarkerSize', 4, ...
-    'DisplayName', '従来のプロトコルで再送');
+plot(distances, throughput_4, '-s', ...
+    'Color', 'k', 'LineWidth', 2, 'MarkerSize', 8, 'MarkerFaceColor', 'k',...
+    'DisplayName', '従来の方式');
 
 % ラベルとタイトル設定
-xlabel('距離 [m]');
-ylabel('スループット [Mbps]');
-title(sprintf("エラー率 %1.f%% の時の距離とスループットの関係", error_rate * 100));
+xlabel('距離 [m]', 'FontSize', 14, 'FontWeight', 'bold'); % X軸ラベル
+ylabel('スループット [Mbps]', 'FontSize', 14, 'FontWeight', 'bold'); % Y軸ラベル
+
+
+% 目盛りのフォントサイズ設定
+set(gca, 'FontSize', 18); % 目盛り数字を大きく設定
+
 grid on;
-legend show;
+
+% 凡例を設定
+lgd = legend;
+lgd.FontSize = 14; % 凡例フォントサイズ
+lgd.Location = 'best'; % 自動配置
 hold off;
