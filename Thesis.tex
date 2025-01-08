@@ -1,0 +1,98 @@
+% 卒業研究前刷テンプレート
+% lualatex用
+
+\RequirePackage{plautopatch}
+
+\documentclass[a4paper,10pt]{ltjsarticle}
+\usepackage{luatexja}
+\usepackage{enumitem} % リストカスタマイズ用
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{flushend}
+\usepackage{graphicx}
+\usepackage{here}
+
+\geometry{
+top=20mm,
+bottom=20mm,
+left=20mm,
+right=20mm
+}
+\setlength{\columnsep}{7.5mm}
+
+\setlength{\baselineskip}{14pt}
+\setlength{\parindent}{1\zw}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1\zw}{}
+\titlespacing{\section}{0pt}{*1}{*1}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1\zw}{}
+\titlespacing{\subsection}{0pt}{*1}{*1}
+\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection}{1\zw}{}
+\titlespacing{\subsubsection}{0pt}{*1}{*1}
+
+\pagestyle{empty}
+
+\SetLabelAlign{parright}{\parbox[t]{\labelwidth}{\raggedleft#1}}
+
+\makeatletter
+\def\@maketitle{
+\begin{flushright}
+{\large \@date}
+\end{flushright}
+\begin{center}
+{\LARGE \@title \par}
+\end{center}
+\begin{flushright}
+{\large \@author}
+\end{flushright}
+\par\vskip 1.5em
+}
+\makeatother
+
+\title{\huge 直線中継伝送におけるアクセス制御方式の干渉時の評価\\
+\Large Evaluation of access control schemes in linear relay transmission during interference.
+}
+
+\author{
+T5-25 \:中村　優\\
+指導教員 \: 設樂　勇
+}
+
+\date{}
+
+\begin{document}
+% タイトル部分は1カラムで表示
+\twocolumn[
+\maketitle
+]
+
+% ---------
+% 本文開始
+% ---------
+\section{はじめに}
+\begin{samepage}
+先行研究[1]にて自由空間での自律分散ドローンによる3次元メッシュネットワーク環境においてのオーバリーチの問題を解決するために、送信信号の届く中継局まで一度に中継する CTR（Cooperation Through Relay）方式が提案されている。本稿では、干渉/誤りが起きたときのCTR方式のスループット特性を従来方式と比較し評価する。
+\end{samepage}
+
+\section{CTR方式の概要}
+\begin{samepage}
+図1にCTR方式の概要を示す。通常の中継伝送では1ホップずつ中継するため、オーバリーチ干渉によってチャネル利用効率が低下する。
+
+CTR方式では、送信信号の届く範囲の最終中継局（図1の\#4）まで一度に信号を送信し、通信経路の中継局（図1の\#3）もパケットを受信する。最終中継局がパケットの受信に失敗した場合は、直線経路の中継局\#3が\#4の代わりに次の中継局にパケットを中継する。
+
+図2にCTR方式のアクセス制御を示す。送信局はACK（Acknowledgement）の返信時間が記述されたパケットを送信する。パケットを受信した中継局は送信局に対してACK返信時間にACKを返信する。このとき、ACKを受信した経路上の中継局はACKの送信待ちをキャンセルする。
+
+最終中継局（図2の\#4）がパケットを受信できない場合は\#3が送信局の\#1にACKを送信し、\#4の代わりに中継する。これにより、オーバリーチ干渉の影響を減らすとともに中継ホップ数も減るためオーバヘッドを削減できる。
+\end{samepage}
+
+
+
+% ---------
+% 文献リスト
+% ---------
+\bibliography{arxiv} % bibファイルを指定 (例: arxiv.bib)
+\bibliographystyle{junsrt}
+
+\end{document}
