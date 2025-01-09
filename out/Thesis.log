@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  8 JAN 2025 11:43
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  9 JAN 2025 10:44
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/rsu93/Documents/MATLAB/2024_01卒研/Thesis.tex
@@ -701,125 +701,27 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 11.09656pt on input line 74.
 (load cache: extra_haranoajigothic-medium.luc)
 No file Thesis.bbl.
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
-[leftcolumn badness]: 1000000 on 50.07pt
-[rightcolumn badness]: 1000000 on 50.07pt
+[leftcolumn badness]: 1000000 on 17.23965pt
+[rightcolumn badness]: 1000000 on 17.23965pt
+[leftcolumn badness]: 1000000 on 17.23965pt
+[rightcolumn badness]: 1000000 on 17.23965pt
+[leftcolumn badness]: 1000000 on 17.23965pt
+[rightcolumn badness]: 1000000 on 17.23965pt
+[leftcolumn badness]: 1000000 on 17.23965pt
+[rightcolumn badness]: 1000000 on 17.23965pt
+[leftcolumn badness]: 1000000 on 17.23965pt
+[rightcolumn badness]: 1000000 on 17.23965pt
 - LAST -
-Extra skip:110.76035pt
-Left:282.69107pt/1.94pt
-Right:172.76108pt/1.10965pt
-Split: 283.34554pt
-Output:283.34554pt
+Extra skip:13.93pt
+Left:404.31107pt/1.10965pt
+Right:390.38107pt/1.10965pt
+Split: 403.96553pt
+Output:403.96553pt
 Pageshrink: 0.0pt
 Pagestretch: 0.0pt
 @colht:579.90425pt
-FLUSHEND [output]: 283.34554pt
-FLUSHEND [leftcolumn badness]: 3
+FLUSHEND [output]: 403.96553pt
+FLUSHEND [leftcolumn badness]: 30
 FUSHEND [rightcolumn badness]: 10000
 [1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
@@ -832,16 +734,16 @@ L3 programming layer <2024-02-20>
 )
 
 Here is how much of LuaTeX's memory you used:
- 5932 strings out of 476447
- 125244,1977958 words of node,token memory allocated
- 2400 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 3 glue, 4 kern, 1 penalty, 1 glyph, 806 attribute, 59 glue_spec, 84 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:15,2:26160,3:417,4:165,5:86,6:33,7:5295,8:3,9:2264,10:25,11:55
- 27860 multiletter control sequences out of 65536+600000
+ 5929 strings out of 476447
+ 244635,1977958 words of node,token memory allocated
+ 1397 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 3 glue, 4 kern, 1 penalty, 1 glyph, 344 attribute, 60 glue_spec, 42 attribute_list, 1 write, 13 user_defined nodes
+   avail lists: 1:50,2:43750,3:675,4:244,5:54,6:42,7:9958,8:3,9:4365,10:25,11:49
+ 27857 multiletter control sequences out of 65536+600000
  29 fonts using 28122487 bytes
  125i,5n,128p,1917b,288s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on Thesis.pdf (1 page, 57182 bytes).
+Output written on Thesis.pdf (1 page, 70390 bytes).
 
 PDF statistics: 43 PDF objects out of 1000 (max. 8388607)
  24 compressed objects within 1 object stream

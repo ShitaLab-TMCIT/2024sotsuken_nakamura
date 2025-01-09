@@ -23,7 +23,7 @@ backoff = 101.5; % 平均バックオフ制御時間 [μs]
 slottime = 9; % ショートスロットタイム[μs]
 max_distance = 1000; % 最大距離 [m]
 N_max = max_distance/50; % 最大端末数
-error_rate=0.5;%通信が失敗する確率
+error_rate=0.03;%通信が失敗する確率
 num_trials = 1000;%試行回数
 
 p= zeros(size(num_trials));%乱数
@@ -145,31 +145,38 @@ valid_indices = throughput_2 > 0;  % 0より大きいスループットのみを
 
 
 % 結果をプロット
-figure('Position', [100, 100, 1000, 500]); 
+figure('Position', [100, 100, 800, 500]); % 横長のグラフ (幅1200, 高さ500)
 hold on;
 
 % グラフ1: 初めのスループットデータ
 plot(N_succsess(valid_indices), throughput_2(valid_indices), '-o', ...
-    'Color', 'r', 'LineWidth', 2, 'MarkerSize', 8, 'MarkerFaceColor', 'r',...
-    'DisplayName', 'CTR方式');
+    'Color', 'r', 'LineWidth', 2, 'MarkerSize', 8, 'MarkerFaceColor', 'r', ...
+    'DisplayName', 'CTR Method');
 
 % グラフ2: 距離ごとのスループットデータ
 plot(distances, throughput_4, '-s', ...
-    'Color', 'k', 'LineWidth', 2, 'MarkerSize', 8, 'MarkerFaceColor', 'k',...
-    'DisplayName', '従来の方式');
+    'Color', 'k', 'LineWidth', 2, 'MarkerSize', 8, 'MarkerFaceColor', 'k', ...
+    'DisplayName', 'Conventional Method');
 
-% ラベルとタイトル設定
-xlabel('距離 [m]', 'FontSize', 14, 'FontWeight', 'bold'); % X軸ラベル
-ylabel('スループット [Mbps]', 'FontSize', 14, 'FontWeight', 'bold'); % Y軸ラベル
+% ラベル設定
+xlabel('Relay distance  [m]', 'FontSize', 30, 'FontName', 'Times New Roman'); % X軸ラベル
+ylabel('Throughput [Mbps]', 'FontSize', 30, 'FontName', 'Times New Roman'); % Y軸ラベル
 
+% 横軸の範囲と間隔を設定
+xticks(0:200:max_distance); % 0から最大距離まで200ごとの目盛りを設定
 
 % 目盛りのフォントサイズ設定
-set(gca, 'FontSize', 18); % 目盛り数字を大きく設定
+set(gca, 'FontSize', 18, 'FontName', 'Times New Roman'); % 目盛り数字を大きく設定し、フォントを指定
 
-grid on;
+% グラフの枠を表示
+box on;
+grid off;
 
 % 凡例を設定
 lgd = legend;
-lgd.FontSize = 14; % 凡例フォントサイズ
-lgd.Location = 'best'; % 自動配置
+lgd.FontSize = 20; % 凡例フォントサイズ
+lgd.FontName = 'Times New Roman'; % 凡例フォント指定
+lgd.Location = 'northeast'; % 凡例を右上に配置
+lgd.Box = 'off'; % 凡例の枠を非表示にする
+
 hold off;
