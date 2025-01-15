@@ -151,12 +151,12 @@ hold on;
 % グラフ1: 初めのスループットデータ
 plot(N_succsess(valid_indices), throughput_2(valid_indices), '-o', ...
     'Color', 'r', 'LineWidth', 2, 'MarkerSize', 8, 'MarkerFaceColor', 'r', ...
-    'DisplayName', 'CTR Method');
+    'DisplayName', 'CTR scheme');
 
 % グラフ2: 距離ごとのスループットデータ
 plot(distances, throughput_4, '-s', ...
     'Color', 'k', 'LineWidth', 2, 'MarkerSize', 8, 'MarkerFaceColor', 'k', ...
-    'DisplayName', 'Conventional Method');
+    'DisplayName', 'Conventional scheme');
 
 % ラベル設定
 xlabel('Relay distance  [m]', 'FontSize', 30, 'FontName', 'Times New Roman'); % X軸ラベル
