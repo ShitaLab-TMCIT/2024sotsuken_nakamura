@@ -34,8 +34,9 @@ payload = zeros(size(TR)); % ペイロードの配列
 N = zeros(size(TR)); % 送信回数
 
 % フィギュア1: スループットのプロット
-figure;
+figure('Position', [100, 100, 700, 500]); % 横長のグラフ (幅1200, 高さ500)
 hold on;
+
 
 markers = {'o', 's', 'd'}; % 点の形状を指定
 colors = {'r', 'b', '[0 0.5 0]'}; % 色を指定
@@ -72,26 +73,40 @@ for i = 1:length(Rmin)
         throughput2(j) = packet / total_tt; % スループット [Mbps]
     end
 
-    % プロット
-    plot(distances, throughput2, ['-' markers{i}], 'Color', colors{i},'LineWidth', 1, 'MarkerSize', 6, 'MarkerFaceColor', colors{i}, 'DisplayName', sprintf('伝送レート:%d Mbps', TR_current));
+     % プロット
+     if TR_current==54
+        plot(distances, throughput2, ['-' markers{i}], 'Color', colors{i},'LineWidth', 2, 'MarkerSize', 8, 'MarkerFaceColor', colors{i}, 'DisplayName', sprintf('One-hop relay '));
+     else
+        plot(distances, throughput2, ['-' markers{i}], 'Color', colors{i},'LineWidth', 2, 'MarkerSize', 8, 'MarkerFaceColor', colors{i}, 'DisplayName', sprintf('Nunber of through drones=%d ',((d_max/50)-1) ));
+     end
+
+     
+    
 end
 
-% グラフのラベルとタイトル設定
-xlabel('距離 [m]', 'FontSize',14, 'FontWeight', 'demi'); % X軸ラベル
-ylabel('スループット [Mbps]', 'FontSize', 14, 'FontWeight', 'demi'); % Y軸ラベル
+% ラベル設定
+xlabel('Relay distance  [m]', 'FontSize', 30, 'FontName', 'Times New Roman'); % X軸ラベル
+ylabel('Throughput [Mbps]', 'FontSize', 30, 'FontName', 'Times New Roman'); % Y軸ラベル
 
-% 目盛りのフォントサイズ設定
-set(gca, 'FontSize', 10); % 目盛り数字を大きく設定
+% 横軸の範囲と間隔を設定
+xticks(0:200:max_distance); % 0から最大距離まで200ごとの目盛りを設定
 
-grid on;
+% 目盛りのフォントサイズ設定p
+set(gca, 'FontSize', 18, 'FontName', 'Times New Roman'); % 目盛り数字を大きく設定し、フォントを指定
+
+% グラフの枠を表示
+box on;
+grid off;
 
 % 凡例を設定
 lgd = legend;
-lgd.FontSize = 9; % 凡例フォントサイズ
-lgd.Location = 'best'; % 自動配置
-% x軸のメモリを200ごとに設定
-xticks(0:200:max_distance);
+lgd.FontSize = 20; % 凡例フォントサイズ
+lgd.FontName = 'Times New Roman'; % 凡例フォント指定
+lgd.Location = 'northeast'; % 凡例を右上に配置
+lgd.Box = 'off'; % 凡例の枠を非表示にする
+
 hold off;
+
 % フィギュア2: オーバーヘッドとペイロード時間の積み上げ棒グラフ
 figure;
 b = bar(1:length(TR), [overhead', payload'], 'stacked', 'BarWidth', 0.3); % 等間隔の整数インデックスを使用

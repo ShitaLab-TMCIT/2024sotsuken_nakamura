@@ -27,7 +27,8 @@ overhead = zeros(size(TR)); % オーバーヘッドの配列
 payload = zeros(size(TR)); % ペイロードの配列
 N=zeros(size(TR));%送信回数
 % フィギュア1: スループットのプロット
-figure;
+% 結果をプロット
+figure('Position', [100, 100, 800, 500]); % 横長のグラフ (幅1200, 高さ500)
 hold on;
 
 for i = 1:length(Rmin)
