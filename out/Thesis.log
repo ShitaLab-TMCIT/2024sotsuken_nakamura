@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  15 JAN 2025 10:42
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  15 JAN 2025 15:45
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/rsu93/Documents/MATLAB/2024_01卒研/Thesis.tex
@@ -713,232 +713,35 @@ LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 <CTR_topology.png, id=2, 754.674pt x 154.176pt>
 File: CTR_topology.png Graphic file (type png)
 <use CTR_topology.png>
-Package luatex.def Info: CTR_topology.png  used on input line 91.
+Package luatex.def Info: CTR_topology.png  used on input line 92.
 (luatex.def)             Requested size: 231.17865pt x 47.2271pt.
 <CTR_accsess.png, id=3, 632.691pt x 422.67pt>
 File: CTR_accsess.png Graphic file (type png)
 <use CTR_accsess.png>
-Package luatex.def Info: CTR_accsess.png  used on input line 99.
+Package luatex.def Info: CTR_accsess.png  used on input line 102.
 (luatex.def)             Requested size: 231.17865pt x 154.43771pt.
  [1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-<./cenventional_topology.png><./CTR_topology.png><./CTR_accsess.png>]
-<throughput_probabilistic_retry_0.03.png, id=18, 1204.5pt x 752.8125pt>
+<./cenventional_topology.png><./CTR_topology.png>]
+<throughtput_vs_placement_50m_max_distance_3.png, id=17, 1053.9375pt x 752.8125pt>
+File: throughtput_vs_placement_50m_max_distance_3.png Graphic file (type png)
+<use throughtput_vs_placement_50m_max_distance_3.png>
+Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3.png  used on input line 114.
+(luatex.def)             Requested size: 231.17865pt x 165.12532pt.
+<throughput_probabilistic_retry_0.03.png, id=18, 1053.9375pt x 752.8125pt>
 File: throughput_probabilistic_retry_0.03.png Graphic file (type png)
 <use throughput_probabilistic_retry_0.03.png>
-Package luatex.def Info: throughput_probabilistic_retry_0.03.png  used on input line 109.
-(luatex.def)             Requested size: 231.17865pt x 144.48322pt.
-<throughput_probabilistic_retry_0.2.png, id=19, 1204.5pt x 752.8125pt>
+Package luatex.def Info: throughput_probabilistic_retry_0.03.png  used on input line 124.
+(luatex.def)             Requested size: 231.17865pt x 165.12532pt.
+<throughput_probabilistic_retry_0.2.png, id=19, 1053.9375pt x 752.8125pt>
 File: throughput_probabilistic_retry_0.2.png Graphic file (type png)
 <use throughput_probabilistic_retry_0.2.png>
-Package luatex.def Info: throughput_probabilistic_retry_0.2.png  used on input line 115.
-(luatex.def)             Requested size: 231.17865pt x 144.48322pt.
+Package luatex.def Info: throughput_probabilistic_retry_0.2.png  used on input line 130.
+(luatex.def)             Requested size: 231.17865pt x 165.12532pt.
 
 No file Thesis.bbl.
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-[leftcolumn badness]: 1000000 on 156.09308pt
-[rightcolumn badness]: 1000000 on 156.09308pt
-- LAST -
-Extra skip:218.87073pt
-Left:387.35263pt/0.0pt
-Right:168.4819pt/0.0pt
-Split: 385.41727pt
-Output:385.41727pt
-Pageshrink: 0.0pt
-Pagestretch: 0.0pt
-@colht:731.23584pt
-FLUSHEND [output]: 385.41727pt
-FLUSHEND [leftcolumn badness]: 90
-FUSHEND [rightcolumn badness]: 10000
-[2<./throughput_probabilistic_retry_0.03.png><./throughput_probabilistic_retry_0.2.png>] (./out/Thesis.aux)
+[2<./CTR_accsess.png><./throughtput_vs_placement_50m_max_distance_3.png><./throughput_probabilistic_retry_0.03.png><./throughput_probabilistic_retry_0.2.png>] (./out/Thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -946,18 +749,18 @@ L3 programming layer <2024-02-20>
 )
 
 Here is how much of LuaTeX's memory you used:
- 5987 strings out of 476447
- 195705,1977958 words of node,token memory allocated
- 3456 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 3 glue, 4 kern, 1 penalty, 1 glyph, 1290 attribute, 59 glue_spec, 128 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:49,2:51175,3:414,4:227,5:70,6:38,7:5339,8:3,9:2279,10:25,11:44
- 27905 multiletter control sequences out of 65536+600000
+ 6000 strings out of 476447
+ 156562,1977958 words of node,token memory allocated
+ 1104 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 3 glue, 4 kern, 1 penalty, 1 glyph, 212 attribute, 59 glue_spec, 30 attribute_list, 1 write, 13 user_defined nodes
+   avail lists: 1:20,2:42182,3:397,4:243,5:73,6:34,7:5005,8:7,9:2322,10:25,11:50
+ 27916 multiletter control sequences out of 65536+600000
  31 fonts using 32037223 bytes
  125i,7n,128p,1917b,366s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on Thesis.pdf (2 pages, 496309 bytes).
+Output written on Thesis.pdf (2 pages, 598510 bytes).
 
-PDF statistics: 61 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 62 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)

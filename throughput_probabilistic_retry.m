@@ -23,7 +23,7 @@ backoff = 101.5; % 平均バックオフ制御時間 [μs]
 slottime = 9; % ショートスロットタイム[μs]
 max_distance = 1000; % 最大距離 [m]
 N_max = max_distance/50; % 最大端末数
-error_rate=0.03;%通信が失敗する確率
+error_rate=0.2;%通信が失敗する確率
 num_trials = 1000;%試行回数
 
 p= zeros(size(num_trials));%乱数
@@ -145,7 +145,7 @@ valid_indices = throughput_2 > 0;  % 0より大きいスループットのみを
 
 
 % 結果をプロット
-figure('Position', [100, 100, 800, 500]); % 横長のグラフ (幅1200, 高さ500)
+figure('Position', [100, 100, 700, 500]); % 横長のグラフ (幅1200, 高さ500)
 hold on;
 
 % グラフ1: 初めのスループットデータ
