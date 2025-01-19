@@ -10,49 +10,43 @@
 \usepackage{multicol}
 \usepackage{amsmath}
 \usepackage{titlesec}
-\usepackage{flushend}
+
 \usepackage{graphicx}
 \usepackage{here}
+\usepackage{fancyvrb}
 
 \geometry{
 top=20mm,
 bottom=20mm,
 left=20mm,
 right=20mm
-}
-\setlength{\columnsep}{7.5mm}
+}\setlength{\columnsep}{7.5mm}
 
-\setlength{\baselineskip}{14pt}
-\setlength{\parindent}{1\zw}
+\linespread{0.8}
 
-\titleformat{\section}{\large\bfseries}{\thesection}{1\zw}{}
-\titlespacing{\section}{0pt}{*1}{*1}
-\titleformat{\subsection}{\large\bfseries}{\thesubsection}{1\zw}{}
-\titlespacing{\subsection}{0pt}{*1}{*1}
-\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection}{1\zw}{}
-\titlespacing{\subsubsection}{0pt}{*1}{*1}
-
-\pagestyle{empty}
-
-\SetLabelAlign{parright}{\parbox[t]{\labelwidth}{\raggedleft#1}}
+\titleformat{\section}{\normalsize}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize}{\thesubsection}{1em}{}
+\titlespacing*{\section}{0pt}{1.0ex plus 1ex minus .2ex}{1ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.0ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+\DefineVerbatimEnvironment{smallverbatim}{Verbatim}{fontsize=\footnotesize}
 
 \makeatletter
-\def\@maketitle{
-\begin{flushright}
-{\large \@date}
-\end{flushright}
-\begin{center}
-{\LARGE \@title \par}
-\end{center}
-\begin{flushright}
-{\large \@author}
-\end{flushright}
-\par\vskip 1.5em
-}
+ \def\@maketitle{
+ \begin{flushright}
+ {\large \@date}
+ \end{flushright}
+ \begin{center}
+ {\LARGE \@title \par}
+ \end{center}
+ \begin{flushright}
+ {\@author}
+ \end{flushright}
+ \par\vskip 1.5em
+ }
 \makeatother
 
-\title{\huge ドローンにおける直線中継伝送のアクセス制御方式の検討評価\\
-\Large Study and Evaluation of Access Control Schemes for Rectilinear Relay transmission in drones
+\title{\huge ドローンネットワークにおける直線中継伝送のアクセス制御方式の検討\\
+\Large A Study on Access Control Schemes for Rectilinear Relay Transmission in Drone Networks
 }
 
 \author{
@@ -72,12 +66,11 @@ T5-25 \:中村　優\\
 % 本文開始
 % ---------
 \section{はじめに}
-ドローンを用いたネットワークにおいて，オーバーリーチの問題を解決するために送信信号の届く中継局まで一度に中継する CTR（Cooperation Through Relay）方式[1]が提案されている. 本稿では,提案手法において干渉/誤りが生じた際のスループット特性を従来方式と比較し評価する.
+　ドローンを用いたネットワークにおいて，オーバーリーチの問題を解決するために送信信号の届く中継局まで一度に中継するCTR（Cooperation Through Relay）方式[1]が提案されている. 本稿では,提案手法において干渉/誤りが生じた際のスループット特性を従来方式と比較し評価する.
 \section{従来方式の概要}
-図１に従来方式の概要を示す．従来の中継伝送では 1 ホップずつ中継するが,自由空間では，伝搬損失が少ないため送信信号が中継先のドローン（図1\#3）より遠くのドローン(図1\#4)に到達し干渉が生じる.そのため,従来方式は，オーバーリーチ干渉によってチャネル利用効率が低下する．また，従来方式で干渉が生じ，再送を行う際には，フォールバック制御により伝送レートを下げることでSNR(Signal to Noise Ratio)が低くてもパケットを受信できるようにしているが,伝送レートの低下に伴って送信時間や再送によるオーバヘッドが増加してしまう課題がある．
+　図1に従来方式の概要を示す．従来の中継伝送では 1 ホップずつ中継するが,自由空間では，伝搬損失が少ないため送信信号が中継先のドローン（図1\#3）より遠くのドローン(図1\#4)に到達し干渉が生じる.そのため,従来方式は，オーバーリーチ干渉によってチャネル利用効率が低下する．また，従来方式で干渉が生じ，再送を行う際には，フォールバック制御により伝送レートを下げることでSNR(Signal to Noise Ratio)が低くてもパケットを受信できるようにしているが,伝送レートの低下に伴って送信時間や再送によるオーバヘッドが増加してしまう課題がある．
 
-
-\begin{figure}[htbp]
+\begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{cenventional_topology.png} % 図のファイル名を指定
   \caption{従来の方式の概要}
@@ -86,64 +79,65 @@ T5-25 \:中村　優\\
 
 \section{CTR方式の概要}
 \subsection{CTR方式のアクセス制御}
-図2に示すCTR方式は,送信信号の届く範囲の最終中継局（図 1\#4）まで一度に信号を送信し，通信経路の中継局（図 1\#3）もパケットを受信する．最終中継局がパケットの受信に失敗した場合は，直線経路の中継局\#3が\#4 の代わりに次の中継局にパケットを中継する．そのためオーバーリーチ干渉の影響を減らすとともに中継ホップ数も減るので中継オーバヘッドも削減することができる．
-\begin{figure}[htbp]
+ オーバリーチ干渉は送信信号が中継局のドローンを超えて他のドローンに干渉することで発生する．そこでCTR方式では直線状に存在する中継局が協調することによってオーバリーチ干
+渉の問題を解決する．図2に示すCTR方式は,送信信号の届く範囲の最終中継局（図 1\#4）まで一度に信号を送信し，通信経路の中継局（図 1\#3）も協調してパケットを受信する．最終中継局がパケットを正常に受信した場合は，以後，同様の手順で中継する．最終中継局がパケットの受信に失敗した場合は，直線経路の中継局\#3が\#4 の代わりに次の中継局にパケットを中継する．そのためオーバーリーチ干渉の影響を減らすとともに中継ホップ数も減るので中継オーバヘッドも削減することができる．
+\begin{figure}[H]
   \centering
-  \includegraphics[width=\linewidth]{CTR_topology.png} % 図のファイル名を指定
+  \includegraphics[width=\linewidth]{ctr_topology.png} % 図のファイル名を指定
   \caption{CTR方式の概要}
   \label{fig:CTR方式のトポロジー} % 参照用ラベル
 \end{figure}
-\\　図3にCTR方式の詳細なアクセス制御手順を示す．送信局はACK（Acknowledgement）のduration時間が記述されたパケットを送信し,パケットを受信した中継局は送信局に対して ACK duration 時間後にACKを返信する．このとき，ACKを受信した直線経路上の中継局はACKの送信待ちをキャンセルする．最終中継局（図2\#4）がパケット を受信できない場合は\#3が送信局の\#1に ACKを送信し，\#4の代わりに中継する．
-ACK duration はスロットタイム区切りとなっており，最終受信中継局が最もACK duration が短く，送信局に近づくにつれて1 ずつスロットタイム増加していく．
-したがって，このCTR 方式は信号が届く最大の範囲を推定する必要がある．そのため，送信電力の制御に加え各端末
-のSNRの受信電力閾値から自律的に判断し中継制御を行う．
+　図3にCTR方式の詳細なアクセス制御手順を示す．通常のCSMA/CA（Carrier Sense Multiple Access/Collision Avoidance）と同様に送信局はランダム時間のBackoffの後，ACK（ACKnowledgement）duration
+時間が記述されたパケットを送信する.パケットを受信した中継局は送信局に対してACK duration時間後にACKを返信する．
+このとき，ACKを受信した直線経路上の中継局はACKの送信待ちをキャンセルする．最終中継局（図2\#4）がパケット を受信できない場合は\#3が送信局の\#1に ACKを送信し，\#4の代わりに中継する．
+ACK duration はスロットタイム区切りとなっており，最終受信中継局が最もACK durationが短く，送信局に近づくにつれて1ずつスロットタイム増加していく．
+したがって，このCTR方式は信号が届く最大の範囲を推定する必要がある．そのため，送信電力の制御に加え各端末のSNRの受信電力閾値から自律的に判断し中継制御を行う．
+
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\linewidth]{CTR_accsess.png} % 図のファイル名を指定
+  \includegraphics[width=\linewidth]{ctr_accsess.png} % 図のファイル名を指定
   \caption{CTR方式のアクセス制御}
   \label{fig:CTR方式のアクセス制御} % 参照用ラベル
 \end{figure}
 \subsection{CTR方式の効果}
-CTR 方式の特徴である中継局をスルーすることによる効果を確認する．
-中継の総伝送距離は1000mとし，50m間隔で直線状に20台のドローンを配置した．アンテナの送受信利得は0dBi，送信電力は10dBmとした．周波数は 2.4GHz，伝送レートはIEEE 802.11gを参考にし,伝搬損失は自由空間伝搬損失とした.
-評価内容は従来の1 ホップ中継(65 Mbps) と中継局を1 台スルー(39 Mbps) した場合，
-および中継局を3 台スルー(19.5 Mbps) した場合におけるスループット特性を確認する．括弧内は使用可能な伝送レートである．
-干渉/誤りは無いとする．
+　CTR方式の特徴である中継局をスルーすることによる効果を確認する．
+中継の総伝送距離は1000mとし，50m間隔で直線状に20台のドローンを配置した．アンテナの送受信利得は0dBi，送信電力は10dBmとした．周波数は2.4GHz，伝送レートはIEEE802.11gを参考にし,伝搬損失は自由空間伝搬損失とした.
+評価内容は従来の1ホップ中継(54Mbps) と中継局を2台スルー(24Mbps) した場合，
+および中継局を3台スルー(18Mbps) した場合におけるスループット特性を確認する．括弧内は使用可能な伝送レートである．
+干渉/誤りは無いとする．図4にCTR方式のスループット特性を示す．従来の1ホップ中継と比べてCTR方式で中継局を3台スルーした条件では約2倍のスループットが得られた.
+ドローンをスルー場合は，通信距離が長くなり使用可能な伝送レートが低下するが、CSMA/CAやプリアンブル等のオーバヘッドとトレードオフになるのでネットワーク全体の通信効率では，
+ホップ数が少ない中継局を3 台スルーする条件が最も高くなことが分かる.
 \begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{throughtput_vs_placement_50m_max_distance_3.png} % 図のファイル名を指定
-  \caption{ドローンをスルーした時のスループット}
-  \label{fig:Throughput_through} % 参照用ラベル
+  \caption{CTR 方式のスループット特性}
+  \label{fig:throughput_through} % 参照用ラベル
 \end{figure}
 \section{比較結果}
-本稿では,CTR方式において誤りが生じる条件にて評価を行う.従来方式では再送時のフォールバック制御により伝送レートを一つ下の12Mbpsとする.中継局を3台スルーした場合におけるスループット特性を評価した.このときパケット誤り率を3％と20％とし,1000回試行したときの従来の方式とCTR方式の平均のスループット特性を比較した.
-この結果からいずれの条件でもCTR方式が従来方式よりも高いスループットが得られることを確認した.また, 誤り率3％と20％を比較すると20％の方が従来方式よりスループットが高くなることから, 従来方式よりもＣＴＲ方式は誤り率が高い条件においても高速に中継伝送が可能なことを確認した．
+本稿では,CTR方式において誤りが生じる条件にて評価を行う．3.2と同じ条件を用いる.また3.2より中継局を3 台スルー(18Mbps) したとき最もスループットが高いことから伝送レートは18Mbpsとする.従来方式では再送時のフォールバック制御により伝送レートを一つ下の12Mbpsとし,このときパケット誤り率を3％と20％とし,1000回試行したときの従来の方式とCTR方式の平均のスループット特性を比較した.
+\\　図5に誤り率3％, 図6に誤り率20％の場合のCTR方式と従来方式の平均スループット特性を示す．この結果からいずれの条件でもCTR方式が従来方式よりも高いスループットが得られることを確認した.また, 誤り率3\%と20\%を比較すると20％の方が従来方式よりスループットが高くなることから, 従来方式よりもCTR方式は誤り率が高い条件においても高速に中継伝送が可能なことを確認した．
 
 \begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{throughput_probabilistic_retry_0.03.png} % 図のファイル名を指定
-  \caption{誤り率3\%の時のスループット}
-  \label{fig:Throughput_0.03} % 参照用ラベル
+  \caption{スループット特性　（誤り率3\%）}
+  \label{fig:throughput_0.03} % 参照用ラベル
 \end{figure}
 \begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{throughput_probabilistic_retry_0.2.png} % 図のファイル名を指定
-  \caption{誤り率20\%の時のスループット}
-  \label{fig:Throughput_0.2} % 参照用ラベル
+  \caption{スループット特性　（誤り率20\%）}
+  \label{fig:throughput_0.2} % 参照用ラベル
 \end{figure}
 \section{まとめ}
-本研究では直線に配置されたドローン中継伝送におけるオー
-バリーチ干渉の影響を計算機シミュレーションなどで確認し，
-干渉問題を解決するために送信信号の届く中継局まで一回で中
-継するCTR 方式を提案した．また，初期検討としてCTR 方
-式の中継局をスルーすることによる効果を確認した．評価結
-果から従来の1 ホップ中継と比較してCTR 方式は高いスルー
-プットが得られることを確認した．今後は，干渉や誤りを含め
-た評価を行い，より詳細に提案方式を評価する予定である．
+　本稿では,直線に配置されたドローン中継伝送におけるオーバリーチ干渉の影響を解決するために送信信号の届く中継局まで一回で中継するCTR方式を検討した.
+CTR方式と従来の方式で誤りが生じたときのスループット特性を各確率ごとに計算し比較した．
+結果から誤りが生じたときも従来の1ホップ中継と比較してCTR方式は高いスループットが得られることを確認した．
+今後は，スループットだけでなくSNRや受信電力を考慮した評価を行う予定である．
 \\参考文献
 \\1. [1]設樂，他，“ドローンの直線中継伝送におけるアクセ
 ス制御方式の一検討,” 電子情報通信学会大会講演
-論文 B‐11‐2，2018 年 9 月
+論文 B‐11‐2，2018年9月
 % ---------
 % 文献リスト
 % ---------

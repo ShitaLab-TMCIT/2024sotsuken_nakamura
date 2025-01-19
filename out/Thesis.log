@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  15 JAN 2025 15:45
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  20 JAN 2025 01:46
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/rsu93/Documents/MATLAB/2024_01卒研/Thesis.tex
@@ -549,27 +549,6 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen193
 \titlewidthlast=\dimen194
 \titlewidthfirst=\dimen195
-) (c:/texlive/2023/texmf-dist/tex/latex/sttools/flushend.sty
-Package: flushend 2021/10/04 v4.0 Balancing columns in twocolumn mode
-\flushend@@lastskip@a=\skip59
-\flushend@@lastskip@b=\skip60
-\flushend@@lastnode=\count303
-\var@@loop@iter=\count304
-\var@@temp@spread=\dimen196
-\var@@temp@a=\dimen197
-\var@@temp@loop=\dimen198
-\flushend@@page@rule=\dimen199
-\flushend@@varbox@lastpage=\box120
-\flushend@@varbox@a=\box121
-\flushend@@varbox@c=\box122
-\flushend@@tempbox@a=\box123
-\flushend@@tempbox@c=\box124
-\flushend@@floatbox=\box125
-\@viper=\box126
-\hold@viper=\box127
-\atColsBreak=\toks36
-\atColsEnd=\toks37
-\oldbreak@skip=\dimen256
 ) (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
@@ -583,42 +562,50 @@ Package graphics Info: Driver file: luatex.def on input line 107.
  (c:/texlive/2023/texmf-dist/tex/latex/graphics-def/luatex.def
 File: luatex.def 2022/09/22 v1.2d Graphics/color driver for luatex
 ))
-\Gin@req@height=\dimen257
-\Gin@req@width=\dimen258
+\Gin@req@height=\dimen196
+\Gin@req@width=\dimen197
 ) (c:/texlive/2023/texmf-dist/tex/latex/here/here.sty) (c:/texlive/2023/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count305
-\float@exts=\toks38
-\float@box=\box128
-\@float@everytoks=\toks39
-\@floatcapt=\box129
+\c@float@type=\count303
+\float@exts=\toks36
+\float@box=\box120
+\@float@everytoks=\toks37
+\@floatcapt=\box121
+) (c:/texlive/2023/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
+\FV@CodeLineNo=\count304
+\FV@InFile=\read2
+\FV@TabBox=\box122
+\c@FancyVerbLine=\count305
+\FV@StepNumber=\count306
+\FV@OutFile=\write3
 ) (./out/Thesis.aux)
 \openout1 = Thesis.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 65.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 65.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 59.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 59.
  (c:/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 65.
-LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 59.
+LaTeX Font Info:    ... okay on input line 59.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -656,17 +643,17 @@ LaTeX Font Info:    ... okay on input line 65.
 
 (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count306
-\scratchdimen=\dimen259
-\scratchbox=\box130
-\nofMPsegments=\count307
-\nofMParguments=\count308
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count309
-\MPscratchDim=\dimen260
-\MPnumerator=\count310
-\makeMPintoPDFobject=\count311
-\everyMPtoPDFconversion=\toks41
+\scratchcounter=\count307
+\scratchdimen=\dimen198
+\scratchbox=\box123
+\nofMPsegments=\count308
+\nofMParguments=\count309
+\everyMPshowfont=\toks38
+\MPscratchCnt=\count310
+\MPscratchDim=\dimen199
+\MPnumerator=\count311
+\makeMPintoPDFobject=\count312
+\everyMPtoPDFconversion=\toks39
 ) (c:/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -674,74 +661,64 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))(load cache: extra_lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 69.
+(Font)              scaled to size 11.09656pt on input line 63.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 69.
+(Font)              scaled to size 11.09656pt on input line 63.
 (load cache: extra_lmroman17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 69.
+(Font)              scaled to size 15.97903pt on input line 63.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 69.
+(Font)              scaled to size 15.97903pt on input line 63.
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 69.
+(Font)              scaled to size 19.17854pt on input line 63.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 69.
+(Font)              scaled to size 19.17854pt on input line 63.
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 69.
+(Font)              scaled to size 13.31586pt on input line 63.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 69.
-(load cache: extra_lmroman12-bold.luc)
-LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <12> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 74.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 74.
-LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <12> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 74.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 74.
-(load cache: extra_haranoajigothic-medium.luc)
+(Font)              scaled to size 13.31586pt on input line 63.
 <cenventional_topology.png, id=1, 588.234pt x 147.825pt>
 File: cenventional_topology.png Graphic file (type png)
 <use cenventional_topology.png>
-Package luatex.def Info: cenventional_topology.png  used on input line 82.
+Package luatex.def Info: cenventional_topology.png  used on input line 75.
 (luatex.def)             Requested size: 231.17865pt x 58.09586pt.
 (load cache: extra_lmroman9-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 83.
+(Font)              scaled to size 8.32242pt on input line 76.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 83.
-<CTR_topology.png, id=2, 754.674pt x 154.176pt>
-File: CTR_topology.png Graphic file (type png)
-<use CTR_topology.png>
-Package luatex.def Info: CTR_topology.png  used on input line 92.
+(Font)              scaled to size 8.32242pt on input line 76.
+<ctr_topology.png, id=2, 754.674pt x 154.176pt>
+File: ctr_topology.png Graphic file (type png)
+<use ctr_topology.png>
+Package luatex.def Info: ctr_topology.png  used on input line 86.
 (luatex.def)             Requested size: 231.17865pt x 47.2271pt.
-<CTR_accsess.png, id=3, 632.691pt x 422.67pt>
-File: CTR_accsess.png Graphic file (type png)
-<use CTR_accsess.png>
-Package luatex.def Info: CTR_accsess.png  used on input line 102.
-(luatex.def)             Requested size: 231.17865pt x 154.43771pt.
+<ctr_accsess.png, id=3, 493.626pt x 424.203pt>
+File: ctr_accsess.png Graphic file (type png)
+<use ctr_accsess.png>
+Package luatex.def Info: ctr_accsess.png  used on input line 98.
+(luatex.def)             Requested size: 231.17865pt x 198.66989pt.
+<throughtput_vs_placement_50m_max_distance_3.png, id=4, 1053.9375pt x 752.8125pt>
+File: throughtput_vs_placement_50m_max_distance_3.png Graphic file (type png)
+<use throughtput_vs_placement_50m_max_distance_3.png>
+Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3.png  used on input line 112.
+(luatex.def)             Requested size: 231.17865pt x 165.12532pt.
  [1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-<./cenventional_topology.png><./CTR_topology.png>]
-<throughtput_vs_placement_50m_max_distance_3.png, id=17, 1053.9375pt x 752.8125pt>
-File: throughtput_vs_placement_50m_max_distance_3.png Graphic file (type png)
-<use throughtput_vs_placement_50m_max_distance_3.png>
-Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3.png  used on input line 114.
-(luatex.def)             Requested size: 231.17865pt x 165.12532pt.
-<throughput_probabilistic_retry_0.03.png, id=18, 1053.9375pt x 752.8125pt>
+<./cenventional_topology.png><./CTR_topology.png><./CTR_accsess.png>]
+<throughput_probabilistic_retry_0.03.png, id=17, 1053.9375pt x 752.8125pt>
 File: throughput_probabilistic_retry_0.03.png Graphic file (type png)
 <use throughput_probabilistic_retry_0.03.png>
-Package luatex.def Info: throughput_probabilistic_retry_0.03.png  used on input line 124.
+Package luatex.def Info: throughput_probabilistic_retry_0.03.png  used on input line 122.
 (luatex.def)             Requested size: 231.17865pt x 165.12532pt.
-<throughput_probabilistic_retry_0.2.png, id=19, 1053.9375pt x 752.8125pt>
+<throughput_probabilistic_retry_0.2.png, id=18, 1053.9375pt x 752.8125pt>
 File: throughput_probabilistic_retry_0.2.png Graphic file (type png)
 <use throughput_probabilistic_retry_0.2.png>
-Package luatex.def Info: throughput_probabilistic_retry_0.2.png  used on input line 130.
+Package luatex.def Info: throughput_probabilistic_retry_0.2.png  used on input line 128.
 (luatex.def)             Requested size: 231.17865pt x 165.12532pt.
 
 No file Thesis.bbl.
-[2<./CTR_accsess.png><./throughtput_vs_placement_50m_max_distance_3.png><./throughput_probabilistic_retry_0.03.png><./throughput_probabilistic_retry_0.2.png>] (./out/Thesis.aux)
+[2<./throughtput_vs_placement_50m_max_distance_3.png><./throughput_probabilistic_retry_0.03.png><./throughput_probabilistic_retry_0.2.png>] (./out/Thesis.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -749,19 +726,19 @@ L3 programming layer <2024-02-20>
 )
 
 Here is how much of LuaTeX's memory you used:
- 6000 strings out of 476447
- 156562,1977958 words of node,token memory allocated
- 1104 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 3 glue, 4 kern, 1 penalty, 1 glyph, 212 attribute, 59 glue_spec, 30 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:20,2:42182,3:397,4:243,5:73,6:34,7:5005,8:7,9:2322,10:25,11:50
- 27916 multiletter control sequences out of 65536+600000
- 31 fonts using 32037223 bytes
- 125i,7n,128p,1917b,366s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on Thesis.pdf (2 pages, 598510 bytes).
+ 6275 strings out of 476447
+ 244629,1977958 words of node,token memory allocated
+ 1022 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 179 attribute, 59 glue_spec, 27 attribute_list, 1 write, 13 user_defined nodes
+   avail lists: 1:48,2:66565,3:477,4:263,5:88,6:42,7:6654,8:2,9:2797,10:25,11:72
+ 28191 multiletter control sequences out of 65536+600000
+ 29 fonts using 28121687 bytes
+ 125i,7n,128p,1917b,362s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
+Output written on Thesis.pdf (2 pages, 594084 bytes).
 
-PDF statistics: 62 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+PDF statistics: 48 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
