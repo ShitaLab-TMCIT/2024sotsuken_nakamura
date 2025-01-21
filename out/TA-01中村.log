@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  20 JAN 2025 09:15
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  21 JAN 2025 11:43
  restricted system commands enabled.
  file:line:error style messages enabled.
-**c:/Users/rsu93/Documents/MATLAB/2024_01卒研/Thesis.tex
-(c:/Users/rsu93/Documents/MATLAB/2024_01卒研/Thesis.tex
+**c:/Users/rsu93/Documents/MATLAB/2024_01卒研/TA-01中村.tex
+(c:/Users/rsu93/Documents/MATLAB/2024_01卒研/TA-01中村.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 Lua module: luaotfload 2024-02-14 3.28 Lua based OpenType font support
@@ -579,8 +579,8 @@ Package: fancyvrb 2024/01/20 4.5c verbatim text (tvz,hv)
 \c@FancyVerbLine=\count305
 \FV@StepNumber=\count306
 \FV@OutFile=\write3
-) (./out/Thesis.aux)
-\openout1 = Thesis.aux
+) (./out/TA-01中村.aux)
+\openout1 = TA-01中村.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
 LaTeX Font Info:    ... okay on input line 59.
@@ -717,8 +717,8 @@ File: throughput_probabilistic_retry_0.2.png Graphic file (type png)
 Package luatex.def Info: throughput_probabilistic_retry_0.2.png  used on input line 128.
 (luatex.def)             Requested size: 231.17865pt x 165.12532pt.
 
-No file Thesis.bbl.
-[2<./throughtput_vs_placement_50m_max_distance_3.png><./throughput_probabilistic_retry_0.03.png><./throughput_probabilistic_retry_0.2.png>] (./out/Thesis.aux)
+No file TA-01中村.bbl.
+[2<./throughtput_vs_placement_50m_max_distance_3.png><./throughput_probabilistic_retry_0.03.png><./throughput_probabilistic_retry_0.2.png>] (./out/TA-01中村.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -730,12 +730,12 @@ Here is how much of LuaTeX's memory you used:
  244629,1977958 words of node,token memory allocated
  1022 words of node memory still in use:
    10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 179 attribute, 59 glue_spec, 27 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:48,2:66565,3:477,4:263,5:88,6:42,7:6654,8:2,9:2797,10:25,11:72
+   avail lists: 1:47,2:66565,3:477,4:263,5:88,6:42,7:6654,8:2,9:2797,10:24,11:72
  28191 multiletter control sequences out of 65536+600000
  29 fonts using 28121687 bytes
- 125i,7n,128p,1917b,362s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 125i,7n,128p,1922b,362s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on Thesis.pdf (2 pages, 592456 bytes).
+Output written on TA-01中村.pdf (2 pages, 592430 bytes).
 
 PDF statistics: 48 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream
