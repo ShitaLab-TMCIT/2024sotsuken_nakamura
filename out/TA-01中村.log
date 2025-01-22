@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  21 JAN 2025 11:43
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  21 JAN 2025 20:53
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/rsu93/Documents/MATLAB/2024_01卒研/TA-01中村.tex
@@ -549,6 +549,8 @@ Package: titlesec 2023/10/27 v2.16 Sectioning titles
 \titlewidth=\dimen193
 \titlewidthlast=\dimen194
 \titlewidthfirst=\dimen195
+) (c:/texlive/2023/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 ) (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
  (c:/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
@@ -690,12 +692,12 @@ LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 <ctr_topology.png, id=2, 754.674pt x 154.176pt>
 File: ctr_topology.png Graphic file (type png)
 <use ctr_topology.png>
-Package luatex.def Info: ctr_topology.png  used on input line 86.
+Package luatex.def Info: ctr_topology.png  used on input line 85.
 (luatex.def)             Requested size: 231.17865pt x 47.2271pt.
 <ctr_accsess.png, id=3, 493.626pt x 424.203pt>
 File: ctr_accsess.png Graphic file (type png)
 <use ctr_accsess.png>
-Package luatex.def Info: ctr_accsess.png  used on input line 98.
+Package luatex.def Info: ctr_accsess.png  used on input line 97.
 (luatex.def)             Requested size: 231.17865pt x 198.66989pt.
 <throughtput_vs_placement_50m_max_distance_3.png, id=4, 1053.9375pt x 752.8125pt>
 File: throughtput_vs_placement_50m_max_distance_3.png Graphic file (type png)
@@ -706,19 +708,12 @@ Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3.png  used o
 
 
 <./cenventional_topology.png><./CTR_topology.png><./CTR_accsess.png>]
-<throughput_probabilistic_retry_0.03.png, id=17, 1053.9375pt x 752.8125pt>
-File: throughput_probabilistic_retry_0.03.png Graphic file (type png)
-<use throughput_probabilistic_retry_0.03.png>
-Package luatex.def Info: throughput_probabilistic_retry_0.03.png  used on input line 122.
+<throughput_probabilistic_retry_v2.png, id=17, 1053.9375pt x 752.8125pt>
+File: throughput_probabilistic_retry_v2.png Graphic file (type png)
+<use throughput_probabilistic_retry_v2.png>
+Package luatex.def Info: throughput_probabilistic_retry_v2.png  used on input line 122.
 (luatex.def)             Requested size: 231.17865pt x 165.12532pt.
-<throughput_probabilistic_retry_0.2.png, id=18, 1053.9375pt x 752.8125pt>
-File: throughput_probabilistic_retry_0.2.png Graphic file (type png)
-<use throughput_probabilistic_retry_0.2.png>
-Package luatex.def Info: throughput_probabilistic_retry_0.2.png  used on input line 128.
-(luatex.def)             Requested size: 231.17865pt x 165.12532pt.
-
-No file TA-01中村.bbl.
-[2<./throughtput_vs_placement_50m_max_distance_3.png><./throughput_probabilistic_retry_0.03.png><./throughput_probabilistic_retry_0.2.png>] (./out/TA-01中村.aux)
+ [2<./throughtput_vs_placement_50m_max_distance_3.png><./throughput_probabilistic_retry_v2.png>] (./out/TA-01中村.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -726,18 +721,18 @@ L3 programming layer <2024-02-20>
 )
 
 Here is how much of LuaTeX's memory you used:
- 6275 strings out of 476447
- 244629,1977958 words of node,token memory allocated
+ 6286 strings out of 476447
+ 244637,1977958 words of node,token memory allocated
  1022 words of node memory still in use:
    10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 179 attribute, 59 glue_spec, 27 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:47,2:66565,3:477,4:263,5:88,6:42,7:6654,8:2,9:2797,10:24,11:72
- 28191 multiletter control sequences out of 65536+600000
+   avail lists: 1:48,2:66432,3:470,4:261,5:88,6:41,7:6607,8:2,9:2785,10:24,11:72
+ 28199 multiletter control sequences out of 65536+600000
  29 fonts using 28121687 bytes
  125i,7n,128p,1922b,362s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on TA-01中村.pdf (2 pages, 592430 bytes).
+Output written on TA-01中村.pdf (2 pages, 504304 bytes).
 
-PDF statistics: 48 PDF objects out of 1000 (max. 8388607)
+PDF statistics: 47 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)

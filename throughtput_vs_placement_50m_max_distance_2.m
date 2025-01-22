@@ -39,7 +39,7 @@ hold on;
 
 
 markers = {'o', 's', 'd'}; % 点の形状を指定
-colors = {'r', 'k', 'b'}; % 色を指定
+colors = {'r', 'b', 'k'}; % 色を指定
 
 for i = 1:length(Rmin)
     Rmin_current = Rmin(i);
