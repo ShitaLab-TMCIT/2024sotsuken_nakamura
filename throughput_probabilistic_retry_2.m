@@ -22,7 +22,7 @@ backoff = 101.5; % 平均バックオフ制御時間 [μs]
 max_distance = 1000; % 最大距離 [m]
 N_max = max_distance / 50; % 最大端末数
 
-num_trials = 1000; % 試行回数
+num_trials = 10000; % 試行回数
 
 p = zeros(size(num_trials)); % 乱数
 ACK_t = zeros(size(Rmin)); % ACKフレーム[μs]
@@ -130,7 +130,6 @@ for k=1:length(error_rate)
     throughput_CONV_1000m_all(k) = throughput_CONV_1000m;
     throughput_CTR_1000m_all(k) = throughput_CTR_1000m;
 end
-
 figure('Position', [100, 100, 700, 500]);
 
 % データとラベルを準備
@@ -138,8 +137,12 @@ bar_data = [throughput_CONV_1000m_all, throughput_CTR_1000m_all]; % データ
 bar_labels = categorical({'3', '10', '20', '50'}); % エラーレートラベル
 
 % バーを描画
-h = bar(bar_data, 0.9); % 0.5はバーの幅
+h = bar(bar_data, 0.9); 
 set(gca, 'XTickLabel', bar_labels, 'XTick', 1:length(bar_labels)); % X軸のラベルを設定
+
+% バーの色を設定
+h(1).FaceColor = 'k'; % 従来方式 (黒)
+h(2).FaceColor = [0.8, 0.2, 0.2]; % CTR方式 (赤)
 
 % 軸ラベルやタイトルを追加
 xlabel('Error Rate [%]');

@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  21 JAN 2025 20:53
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  23 JAN 2025 03:01
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/rsu93/Documents/MATLAB/2024_01卒研/TA-01中村.tex
@@ -679,41 +679,48 @@ LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 (Font)              scaled to size 13.31586pt on input line 63.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (Font)              scaled to size 13.31586pt on input line 63.
-<cenventional_topology.png, id=1, 588.234pt x 147.825pt>
-File: cenventional_topology.png Graphic file (type png)
-<use cenventional_topology.png>
-Package luatex.def Info: cenventional_topology.png  used on input line 75.
-(luatex.def)             Requested size: 231.17865pt x 58.09586pt.
+<cenventional_topology.pdf, id=1, 2022.55624pt x 434.62375pt>
+File: cenventional_topology.pdf Graphic file (type pdf)
+<use cenventional_topology.pdf>
+Package luatex.def Info: cenventional_topology.pdf  used on input line 75.
+(luatex.def)             Requested size: 231.17865pt x 49.67229pt.
 (load cache: extra_lmroman9-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 (Font)              scaled to size 8.32242pt on input line 76.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (Font)              scaled to size 8.32242pt on input line 76.
-<ctr_topology.png, id=2, 754.674pt x 154.176pt>
-File: ctr_topology.png Graphic file (type png)
-<use ctr_topology.png>
-Package luatex.def Info: ctr_topology.png  used on input line 85.
-(luatex.def)             Requested size: 231.17865pt x 47.2271pt.
-<ctr_accsess.png, id=3, 493.626pt x 424.203pt>
-File: ctr_accsess.png Graphic file (type png)
-<use ctr_accsess.png>
-Package luatex.def Info: ctr_accsess.png  used on input line 97.
-(luatex.def)             Requested size: 231.17865pt x 198.66989pt.
-<throughtput_vs_placement_50m_max_distance_3.png, id=4, 1053.9375pt x 752.8125pt>
-File: throughtput_vs_placement_50m_max_distance_3.png Graphic file (type png)
-<use throughtput_vs_placement_50m_max_distance_3.png>
-Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3.png  used on input line 112.
-(luatex.def)             Requested size: 231.17865pt x 165.12532pt.
+<CTR_topology.pdf, id=2, 2594.69376pt x 431.6125pt>
+File: CTR_topology.pdf Graphic file (type pdf)
+<use CTR_topology.pdf>
+Package luatex.def Info: CTR_topology.pdf  used on input line 85.
+(luatex.def)             Requested size: 231.17865pt x 38.45488pt.
+<CTR_accsess.pdf, id=3, 1611.01875pt x 1363.0925pt>
+File: CTR_accsess.pdf Graphic file (type pdf)
+<use CTR_accsess.pdf>
+Package luatex.def Info: CTR_accsess.pdf  used on input line 97.
+(luatex.def)             Requested size: 231.17865pt x 195.59464pt.
+<throughtput_vs_placement_50m_max_distance_3.pdf, id=4, 1053.9375pt x 753.81625pt>
+File: throughtput_vs_placement_50m_max_distance_3.pdf Graphic file (type pdf)
+<use throughtput_vs_placement_50m_max_distance_3.pdf>
+Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3.pdf  used on input line 112.
+(luatex.def)             Requested size: 231.17865pt x 165.34549pt.
  [1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-<./cenventional_topology.png><./CTR_topology.png><./CTR_accsess.png>]
-<throughput_probabilistic_retry_v2.png, id=17, 1053.9375pt x 752.8125pt>
-File: throughput_probabilistic_retry_v2.png Graphic file (type png)
-<use throughput_probabilistic_retry_v2.png>
-Package luatex.def Info: throughput_probabilistic_retry_v2.png  used on input line 122.
-(luatex.def)             Requested size: 231.17865pt x 165.12532pt.
- [2<./throughtput_vs_placement_50m_max_distance_3.png><./throughput_probabilistic_retry_v2.png>] (./out/TA-01中村.aux)
+<./cenventional_topology.pdf><./CTR_topology.pdf><./CTR_accsess.pdf>]
+<throughput_probabilistic_retry_v3.pdf, id=35, 1053.9375pt x 753.81625pt>
+File: throughput_probabilistic_retry_v3.pdf Graphic file (type pdf)
+<use throughput_probabilistic_retry_v3.pdf>
+Package luatex.def Info: throughput_probabilistic_retry_v3.pdf  used on input line 123.
+(luatex.def)             Requested size: 231.17865pt x 165.34549pt.
+<throughput_probabilistic_retry_v3.1.pdf, id=36, 1053.9375pt x 753.81625pt>
+File: throughput_probabilistic_retry_v3.1.pdf Graphic file (type pdf)
+<use throughput_probabilistic_retry_v3.1.pdf>
+Package luatex.def Info: throughput_probabilistic_retry_v3.1.pdf  used on input line 129.
+(luatex.def)             Requested size: 231.17865pt x 165.34549pt.
+ [2<./throughtput_vs_placement_50m_max_distance_3.pdf><./throughput_probabilistic_retry_v3.pdf><./throughput_probabilistic_retry_v3.1.pdf>] [3
+
+] (./out/TA-01中村.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -721,19 +728,19 @@ L3 programming layer <2024-02-20>
 )
 
 Here is how much of LuaTeX's memory you used:
- 6286 strings out of 476447
- 244637,1977958 words of node,token memory allocated
- 1022 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 179 attribute, 59 glue_spec, 27 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:48,2:66432,3:470,4:261,5:88,6:41,7:6607,8:2,9:2785,10:24,11:72
- 28199 multiletter control sequences out of 65536+600000
+ 6296 strings out of 476447
+ 244624,1977958 words of node,token memory allocated
+ 1046 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 190 attribute, 59 glue_spec, 28 attribute_list, 1 write, 13 user_defined nodes
+   avail lists: 1:50,2:69629,3:480,4:268,5:91,6:45,7:6877,8:3,9:2925,10:24,11:77
+ 28207 multiletter control sequences out of 65536+600000
  29 fonts using 28121687 bytes
  125i,7n,128p,1922b,362s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on TA-01中村.pdf (2 pages, 504304 bytes).
+Output written on TA-01中村.pdf (3 pages, 240957 bytes).
 
-PDF statistics: 47 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+PDF statistics: 83 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
