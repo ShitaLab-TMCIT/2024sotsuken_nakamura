@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  23 JAN 2025 03:03
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  23 JAN 2025 12:55
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/rsu93/Documents/MATLAB/2024_01卒研/TA-01中村.tex
@@ -718,9 +718,7 @@ File: throughput_probabilistic_retry_v3.1.pdf Graphic file (type pdf)
 <use throughput_probabilistic_retry_v3.1.pdf>
 Package luatex.def Info: throughput_probabilistic_retry_v3.1.pdf  used on input line 129.
 (luatex.def)             Requested size: 231.17865pt x 165.34549pt.
- [2<./throughtput_vs_placement_50m_max_distance_3.pdf><./throughput_probabilistic_retry_v3.pdf><./throughput_probabilistic_retry_v3.1.pdf>] [3
-
-] (./out/TA-01中村.aux)
+ [2<./throughtput_vs_placement_50m_max_distance_3.pdf><./throughput_probabilistic_retry_v3.pdf><./throughput_probabilistic_retry_v3.1.pdf>] (./out/TA-01中村.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
@@ -729,18 +727,18 @@ L3 programming layer <2024-02-20>
 
 Here is how much of LuaTeX's memory you used:
  6296 strings out of 476447
- 244624,1977958 words of node,token memory allocated
- 1046 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 190 attribute, 59 glue_spec, 28 attribute_list, 1 write, 13 user_defined nodes
-   avail lists: 1:50,2:69557,3:480,4:268,5:91,6:45,7:6869,8:3,9:2925,10:24,11:77
+ 244629,1977958 words of node,token memory allocated
+ 1022 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 4 kern, 1 glyph, 179 attribute, 59 glue_spec, 27 attribute_list, 1 write, 13 user_defined nodes
+   avail lists: 1:50,2:68423,3:478,4:266,5:91,6:45,7:6808,8:3,9:2866,10:24,11:77
  28207 multiletter control sequences out of 65536+600000
  29 fonts using 28121687 bytes
  125i,7n,128p,1922b,362s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on TA-01中村.pdf (3 pages, 240154 bytes).
+Output written on TA-01中村.pdf (2 pages, 239461 bytes).
 
-PDF statistics: 83 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+PDF statistics: 80 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
