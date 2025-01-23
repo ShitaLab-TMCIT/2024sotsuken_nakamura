@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  23 JAN 2025 12:55
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  23 JAN 2025 13:00
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/rsu93/Documents/MATLAB/2024_01卒研/TA-01中村.tex
@@ -735,10 +735,10 @@ Here is how much of LuaTeX's memory you used:
  29 fonts using 28121687 bytes
  125i,7n,128p,1922b,362s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf>
-Output written on TA-01中村.pdf (2 pages, 239461 bytes).
+Output written on TA-01中村.pdf (2 pages, 211710 bytes).
 
-PDF statistics: 80 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+PDF statistics: 84 PDF objects out of 1000 (max. 8388607)
+ 48 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 

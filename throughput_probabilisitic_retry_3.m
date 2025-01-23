@@ -156,7 +156,7 @@ ylabel('Throughput [Mbps]', 'FontSize', 20, 'FontName', 'Times New Roman');
 
 % 軸のフォントサイズ
 set(gca, 'FontSize', 16, 'FontName', 'Times New Roman');
-grid on; % グリッド表示
+grid off; % グリッド表示
 box on; % 枠表示
 
 % 凡例を設定
@@ -177,7 +177,7 @@ ylabel('Transmission Count', 'FontSize', 20, 'FontName', 'Times New Roman');
 
 % 軸のフォントサイズ
 set(gca, 'FontSize', 16, 'FontName', 'Times New Roman');
-grid on; % グリッド表示
+grid off; % グリッド表示
 box on; % 枠表示
 
 % 凡例を設定
