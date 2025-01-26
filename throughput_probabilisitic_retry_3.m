@@ -143,7 +143,7 @@ for k=0:100%誤り率
     throughput_CTR_1000m_all(k+1) = throughput_CTR_1000m;
 end
 
-figure('Position', [100, 100, 700, 500]);
+figure('Position', [100, 100, 800, 500]);
 
 % Conventional scheme と CTR scheme のスループットをプロット
 plot(0:100, throughput_CONV_1000m_all, 'k-', 'LineWidth', 2); % Conventional scheme (黒)
@@ -164,7 +164,7 @@ legend( {'Conventional scheme', 'CTR scheme'}, 'FontSize', 20, 'FontName', 'Time
     'Location', 'northeast', 'Box', 'off'); % 凡例の設定
 
 hold off;
-figure('Position', [100, 100, 700, 500]);
+figure('Position', [100, 100, 800, 500]);
 
 % Conventional scheme と CTR scheme のスループットをプロット
 plot(0:100, num_times_sent_CONV_all, 'k-', 'LineWidth', 2); % Conventional scheme (黒)
