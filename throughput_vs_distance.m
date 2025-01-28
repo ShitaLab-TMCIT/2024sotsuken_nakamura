@@ -18,7 +18,7 @@ LLC = 64; % LLCヘッダ[bit]
 packet = 12000; % IPパケット[bit]
 FCS = 32; % FCS[bit]
 tail = 6; % テイルビット[bit]
-SIFS = 10; % [μs]
+SIFS = 16; % [μs]
 DIFS = 34; % [μs]
 backoff = 101.5; % 平均バックオフ制御時間 [μs]
 
@@ -60,7 +60,7 @@ for i = 1:length(TR)
             end
 
             % スループットの計算
-            total_tt(j) = (ACK_t(i) + data_t(i) + SIFS + backoff +6) * nt(j);
+            total_tt(j) = (ACK_t(i) + data_t(i) + SIFS + backoff ) * nt(j);
             throughput(j) = packet / total_tt(j);
             distance(j) = j * d;
         else

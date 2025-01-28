@@ -4,7 +4,7 @@ TR = [6, 9, 12, 18, 24, 36, 48, 54]; % 伝送レート [Mbps]
 databit = [24, 36, 48, 72, 96, 144, 192, 216]; % OFDMシンボルごとのデータビット[bit]
 
 Tp = 10; % 送信電力 [dBm]
-f = 2.4 * 10^9; % 周波数 [Hz]
+f = 2.4* 10^9; % 周波数 [Hz]
 c = 3 * 10^8; % 光速 [m/s]
 
 PLCP_pre = 16; % PLCPプリアンブル[μs]
@@ -16,7 +16,7 @@ LLC = 64; % LLCヘッダ[bit]
 packet = 12000; % IPパケット長[bit]
 FCS = 32; % FCS[bit]
 tail = 6; % テイルビット[bit]
-SIFS = 10; % [μs]
+SIFS = 16; % [μs]
 DIFS = 34; % [μs]
 backoff = 101.5; % 平均バックオフ制御時間 [μs]
 
@@ -67,8 +67,8 @@ for i = 1:length(Rmin)
     
     for j = 1:length(distances)
         D = distances(j);
-        total_tt = (ACK_t + data_t + SIFS + backoff + 6) * (D / d_max); % トータル時間計算
-        overhead(i) = (ACK_t + data_o_t + SIFS + backoff + 6) * (D / d_max); % オーバーヘッドの総時間
+        total_tt = (ACK_t + data_t + SIFS + backoff ) * (D / d_max); % トータル時間計算
+        overhead(i) = (ACK_t + data_o_t + SIFS + backoff ) * (D / d_max); % オーバーヘッドの総時間
         payload(i) = payload_t * (D / d_max); % ペイロードの送信時間
         throughput2(j) = packet / total_tt; % スループット [Mbps]
     end

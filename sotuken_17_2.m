@@ -16,10 +16,10 @@ LLC = 64; % LLCヘッダ[bit]
 packet = 12000; % IPパケット長[bit]
 FCS = 32; % FCS[bit]
 tail = 6; % テイルビット[bit]
-SIFS = 10; % [μs]
+SIFS = 16; % [μs]
 DIFS = 34; % [μs]
 backoff = 101.5; % 平均バックオフ制御時間 [μs]
-slottime = 9; % ショートスロットタイム[μs]
+slottime = 9; %スロットタイム[μs]
 
 max_distance = 1000; % 最大距離 [m]
 N = 0; % 今の端末数
