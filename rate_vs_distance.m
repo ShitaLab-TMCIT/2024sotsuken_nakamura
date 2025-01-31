@@ -1,31 +1,44 @@
-%各伝送レートにおける最大伝送距離の計算
-Rmin=[-82 -81 -79 -77 -74 -70 -66 -65]; % 最小受信感度[dBm]
-Tp=10; % 送信電力[dBm]
+% 各伝送レートにおける最大伝送距離の計算
+Rmin = [-82 -81 -79 -77 -74 -70 -66 -65]; % 最小受信感度[dBm]
+Tp = 10; % 送信電力[dBm]
 f = 2.4 * 10^9;
 c = 3 * 10^8;
 d = zeros(size(Rmin));
-Lfs=zeros(size(Rmin));
-TR=[6 9 12 18 24 36 48 54];
+Lfs = zeros(size(Rmin));
+TR = [6 9 12 18 24 36 48 54];
 
-for i=1:length(Rmin)
-    Lfs(i)=Tp-Rmin(i);
-    d(i)=((10^(Lfs(i)/20))*c)/(4*pi*f);
+for i = 1:length(Rmin)
+    Lfs(i) = Tp - Rmin(i);
+    d(i) = ((10^(Lfs(i)/20)) * c) / (4 * pi * f);
 end
 
 % プロット
-figure;
+figure('Position', [100, 100, 800, 500]);
 hold on;
+
 for i = 1:length(d)-1
-    x = linspace(d(i), d(i+1), 100); % d(i)からd(i+1)までの範囲を100点で分割
+    x = linspace(d(i), d(i+1), 2);
     y = ones(size(x)) * TR(i); % 同じThroughputの値を取る
-    plot(x, y, 'b'); % 青色でプロット
+    plot(x, y, 'b','LineWidth', 2); % 青色でプロット
 end
 
 % 最後の区間もプロット
 x = linspace(d(end), 0, 100); % d(end)から0までの範囲を100点で分割
 y = ones(size(x)) * TR(end); % 54 Mbpsの値を取る
-plot(x, y, 'b');
+plot(x, y, 'b','LineWidth', 2);
 
-xlabel('d(m)');
-ylabel('TR(Mbps)');
+xlabel('Distance [m]', 'FontSize', 20, 'FontName', 'Times New Roman');
+ylabel('TR [Mbps]', 'FontSize', 20, 'FontName', 'Times New Roman');
+set(gca, 'FontSize', 16, 'FontName', 'Times New Roman');
+grid off; % グリッド表示
+box on; % 枠表示
 hold off;
+
+% y軸のメモリを10ずつ、x軸のメモリを100ずつに設定
+yticks(0:10:60); 
+xticks(0:100:400);
+
+% y軸の範囲を0から60に設定
+ylim([0 60]);
+
+

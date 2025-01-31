@@ -34,7 +34,7 @@ payload = zeros(size(TR)); % ペイロードの配列
 N = zeros(size(TR)); % 送信回数
 
 % フィギュア1: スループットのプロット
-figure('Position', [100, 100, 800, 500]); % 横長のグラフ (幅1200, 高さ500)
+figure('Position', [100, 100, 800, 500]); % 横長のグラフ (幅800, 高さ500)
 hold on;
 
 
@@ -68,8 +68,8 @@ for i = 1:length(Rmin)
     for j = 1:length(distances)
         D = distances(j);
         total_tt = (ACK_t + data_t + SIFS + backoff ) * (D / d_max); % トータル時間計算
-        overhead(i) = (ACK_t + data_o_t + SIFS + backoff ) * (D / d_max); % オーバーヘッドの総時間
-        payload(i) = payload_t * (D / d_max); % ペイロードの送信時間
+        overhead(i) = (ACK_t + data_o_t + SIFS + backoff ) * (D / d_max)/1000; % オーバーヘッドの総時間
+        payload(i) = payload_t * (D / d_max)/1000; % ペイロードの送信時間
         throughput2(j) = packet / total_tt; % スループット [Mbps]
     end
 
@@ -108,18 +108,22 @@ lgd.Box = 'off'; % 凡例の枠を非表示にする
 hold off;
 
 % フィギュア2: オーバーヘッドとペイロード時間の積み上げ棒グラフ
-figure;
+figure('Position', [100, 100, 800, 500]); % 横長のグラフ (幅800, 高さ500)
 b = bar(1:length(TR), [overhead', payload'], 'stacked', 'BarWidth', 0.3); % 等間隔の整数インデックスを使用
 
 % x軸のラベルを設定（例として伝送レートを表示）
 xticks(1:length(TR)); % x軸を等間隔の整数インデックスに設定
-xticklabels(arrayfun(@(x) sprintf('%d Mbps', x), TR, 'UniformOutput', false)); % カスタムラベルを設定
+xticklabels(arrayfun(@(x) sprintf('%d ', x), TR, 'UniformOutput', false)); % カスタムラベルを設定
 
 % グラフのラベルとタイトル設定
-xlabel('伝送レート'); % 任意のラベル
-ylabel('時間 [μs]');
-title('伝送レートに対するオーバーヘッドとペイロードの時間');
-grid on;
+xlabel('Transfer Rate[Mbps]'); % 任意のラベル
+ylabel('Time [ms]');
+
+grid off;
+
+% 目盛りのフォントサイズ設定
+set(gca, 'FontSize', 18, 'FontName', 'Times New Roman'); % 目盛り数字を大きく設定し、フォントを指定
+
 
 % 各ペイロードバーの部分にN-1等分の線を引く
 hold on;

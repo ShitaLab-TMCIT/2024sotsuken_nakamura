@@ -163,6 +163,9 @@ box on; % 枠表示
 legend( {'Conventional scheme', 'CTR scheme'}, 'FontSize', 20, 'FontName', 'Times New Roman', ...
     'Location', 'northeast', 'Box', 'off'); % 凡例の設定
 
+    % y軸の範囲を0から最大値に設定
+ylim([0 3]);
+
 hold off;
 figure('Position', [100, 100, 800, 500]);
 
