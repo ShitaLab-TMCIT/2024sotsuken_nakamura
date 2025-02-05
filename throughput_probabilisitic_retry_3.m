@@ -16,7 +16,7 @@ LLC = 64; % LLCヘッダ[bit]
 packet = 12000; % IPパケット長[bit]
 FCS = 32; % FCS[bit]
 tail = 6; % テイルビット[bit]
-SIFS = 16; % [μs]
+SIFS = 10; % [μs]
 DIFS = 34; % [μs]
 backoff = 101.5; % 平均バックオフ制御時間 [μs]
 max_distance = 1000; % 最大距離 [m]
@@ -71,7 +71,7 @@ for k=0:100%誤り率
             num_times_sent_CTR=num_times_sent_CTR+1;%CTR方式で送信された回数をカウント
             % 端末数をカウント
             N = N + N_through(4);
-            total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS + backoff);
+            total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS +6+ backoff);
 
             if p < (k/100)
                 N = max(0, N - 1);
@@ -120,10 +120,10 @@ for k=0:100%誤り率
             p = rand;
             D = distances(j);
             if p < (k/100)
-                total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS + backoff) + (ACK_t(3) + data_t(3) + SIFS + backoff);
+                total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS +6+ backoff) + (ACK_t(3) + data_t(3) + SIFS+6 + backoff);
                 num_times_sent_CONV=num_times_sent_CONV+1;%再送した回数をカウント
             else
-                total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS + backoff);
+                total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS +6+ backoff);
             end
             throughput_3(i, j) = packet / total_tt;
         end
@@ -137,10 +137,10 @@ for k=0:100%誤り率
     throughput_CONV_1000m = throughput_4((N_max/N_through(4))); % 従来方式のスループット
 
     % スループットデータを保存
-    num_times_sent_CTR_all(k+1)=num_times_sent_CTR;%CTR方式で送信された回数を保存
-    num_times_sent_CONV_all(k+1)=num_times_sent_CONV;%従来方式で送信された回数を保存
-    throughput_CONV_1000m_all(k+1) = throughput_CONV_1000m;
-    throughput_CTR_1000m_all(k+1) = throughput_CTR_1000m;
+    num_times_sent_CTR_all(k+1)=num_times_sent_CTR;%誤り率k%の時のCTR方式で送信された平均回数を保存
+    num_times_sent_CONV_all(k+1)=num_times_sent_CONV;%誤り率k%の時の従来方式で送信された平均回数を保存
+    throughput_CONV_1000m_all(k+1) = throughput_CONV_1000m;%誤り率k%の時のCTR方式で送信された平均スループットを保存
+    throughput_CTR_1000m_all(k+1) = throughput_CTR_1000m;%誤り率k%の時の従来方式で送信された平均スループットを保存
 end
 
 figure('Position', [100, 100, 800, 500]);
@@ -152,10 +152,10 @@ plot(0:100, throughput_CTR_1000m_all, 'r-', 'LineWidth', 2); % CTR scheme (赤)
 
 % 軸ラベルやタイトルを追加
 xlabel('Error Rate [%]');
-ylabel('Throughput [Mbps]', 'FontSize', 20, 'FontName', 'Times New Roman');
+ylabel('Throughput [Mbps]', 'FontSize', 30, 'FontName', 'Times New Roman');
 
 % 軸のフォントサイズ
-set(gca, 'FontSize', 16, 'FontName', 'Times New Roman');
+set(gca, 'FontSize', 18, 'FontName', 'Times New Roman');
 grid off; % グリッド表示
 box on; % 枠表示
 
@@ -176,10 +176,10 @@ plot(0:100, num_times_sent_CTR_all, 'r-', 'LineWidth', 2); % CTR scheme (赤)
 
 % 軸ラベルやタイトルを追加
 xlabel('Error Rate [%]');
-ylabel('Transmission Count', 'FontSize', 20, 'FontName', 'Times New Roman');
+ylabel('Transmission Count', 'FontSize', 30, 'FontName', 'Times New Roman');
 
 % 軸のフォントサイズ
-set(gca, 'FontSize', 16, 'FontName', 'Times New Roman');
+set(gca, 'FontSize', 18, 'FontName', 'Times New Roman');
 grid off; % グリッド表示
 box on; % 枠表示
 

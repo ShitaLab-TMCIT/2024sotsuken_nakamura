@@ -65,7 +65,7 @@ for k=1:length(error_rate)
 
             % 端末数をカウント
             N = N + N_through(4);
-            total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS + backoff);
+            total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS +6+ backoff);
 
             if p < error_rate(k)
                 N = max(0, N - 1);
@@ -111,9 +111,9 @@ for k=1:length(error_rate)
             p = rand;
             D = distances(j);
             if p < error_rate(k)
-                total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS + backoff) + (ACK_t(3) + data_t(3) + SIFS + backoff);
+                total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS +6+ backoff) + (ACK_t(3) + data_t(3) + SIFS +6+ backoff);
             else
-                total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS + backoff);
+                total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS +6+ backoff);
             end
             throughput_3(i, j) = packet / total_tt;
         end

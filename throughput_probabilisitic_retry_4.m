@@ -16,7 +16,7 @@ LLC = 64; % LLCヘッダ[bit]
 packet = 12000; % IPパケット長[bit]
 FCS = 32; % FCS[bit]
 tail = 6; % テイルビット[bit]
-SIFS = 16; % [μs]
+SIFS = 10; % [μs]
 DIFS = 34; % [μs]
 backoff = 101.5; % 平均バックオフ制御時間 [μs]
 max_distance = 1000; % 最大距離 [m]
@@ -68,7 +68,7 @@ for k2 = 0:0.01:1  % k2を0から1まで0.01刻みで変化させる
             p = rand; % 通常の確率p
             num_times_sent_CTR = num_times_sent_CTR + 1; % CTR方式で送信された回数をカウント
             N = N + N_through(4); % 端末数をカウント
-            total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS + backoff);
+            total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS+6 + backoff);
 
             % 最初の誤りが発生する場合 (k1を使用)
             if p < k1

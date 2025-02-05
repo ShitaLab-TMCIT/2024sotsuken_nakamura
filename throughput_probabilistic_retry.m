@@ -17,7 +17,7 @@ LLC = 64; % LLCヘッダ[bit]
 packet = 12000; % IPパケット長[bit]
 FCS = 32; % FCS[bit]
 tail = 6; % テイルビット[bit]
-SIFS = 16; % [μs]
+SIFS = 10; % [μs]
 DIFS = 34; % [μs]
 backoff = 101.5; % 平均バックオフ制御時間 [μs]
 slottime = 9; % ショートスロットタイム[μs]
@@ -67,7 +67,7 @@ for i = 1:num_trials  % 試行回数分ループ
         
         % 端末数をカウント
         N = N + N_through(4);  
-        total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS + backoff); % 総伝送時間の計算
+        total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS +6+ backoff); % 総伝送時間の計算
 
         if p < error_rate  % パケットが失敗した場合
             N = max(0, N - 1);  % 1つ手前に戻る
@@ -124,10 +124,10 @@ valid_indices = throughput_2 > 0;  % 0より大きいスループットのみを
             D = distances(j);
             if p < error_rate
                 % 再送が発生する場合 (最初は18 Mbps、再送は12 Mbps)
-                total_tt =total_tt+ (ACK_t(4) + data_t(4) + SIFS + backoff)+(ACK_t(3) + data_t(3) + SIFS + backoff) ;
+                total_tt =total_tt+ (ACK_t(4) + data_t(4) + SIFS +6+ backoff)+(ACK_t(3) + data_t(3) + SIFS+6 + backoff) ;
             else
                  % 再送が発生しない場合 (18 Mbps)
-                 total_tt =total_tt+ (ACK_t(4) + data_t(4) + SIFS + backoff) ;
+                 total_tt =total_tt+ (ACK_t(4) + data_t(4) + SIFS+6 + backoff) ;
                
             end
             throughput_3(i, j) = packet / total_tt; % スループットを計算 [Mbps]

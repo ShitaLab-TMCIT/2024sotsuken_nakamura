@@ -16,7 +16,7 @@ LLC = 64; % LLCヘッダ[bit]
 packet = 12000; % IPパケット長[bit]
 FCS = 32; % FCS[bit]
 tail = 6; % テイルビット[bit]
-SIFS = 16; % [μs]
+SIFS = 10; % [μs]
 DIFS = 34; % [μs]
 backoff = 101.5; % 平均バックオフ制御時間 [μs]
 
@@ -67,8 +67,8 @@ for i = 1:length(Rmin)
     
     for j = 1:length(distances)
         D = distances(j);
-        total_tt = (ACK_t + data_t + SIFS + backoff ) * (D / d_max); % トータル時間計算
-        overhead(i) = (ACK_t + data_o_t + SIFS + backoff ) * (D / d_max)/1000; % オーバーヘッドの総時間
+        total_tt = (ACK_t + data_t + SIFS+6 + backoff ) * (D / d_max); % トータル時間計算
+        overhead(i) = (ACK_t + data_o_t + SIFS+6 + backoff ) * (D / d_max)/1000; % オーバーヘッドの総時間
         payload(i) = payload_t * (D / d_max)/1000; % ペイロードの送信時間
         throughput2(j) = packet / total_tt; % スループット [Mbps]
     end

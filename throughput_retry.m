@@ -17,7 +17,7 @@ LLC = 64; % LLCヘッダ[bit]
 packet = 12000; % IPパケット長[bit]
 FCS = 32; % FCS[bit]
 tail = 6; % テイルビット[bit]
-SIFS = 16; % [μs]
+SIFS = 10; % [μs]
 DIFS = 34; % [μs]
 backoff = 101.5; % 平均バックオフ制御時間 [μs]
 slottime = 9; % ショートスロットタイム[μs]
@@ -59,7 +59,7 @@ for cond_idx = 1:length(conditions)
 
     while N <= N_max
         N = N + N_skip(4);
-        total_tt = total_tt + (ACK_t(4) + data_t (4)+ SIFS + backoff); % トータル時間
+        total_tt = total_tt + (ACK_t(4) + data_t (4)+ SIFS +6+ backoff); % トータル時間
         N = N - conditions(cond_idx); % 条件ごとの端末減少
         total_tt = total_tt +(conditions(cond_idx)-1) * slottime +  ACK_t(4); % 通信成功
 
@@ -88,7 +88,7 @@ end
 throughput_fixed = zeros(size(distances));
 for j = 1:length(distances)
     D = distances(j);
-    total_tt = (ACK_t(4) + data_t(4) + SIFS + backoff) * (D / d_max(4)) +(ACK_t(3) + data_t(3) + SIFS + backoff) * (D / d_max(4)) ; %最初18Mbpsで送信し再送は12Mbps
+    total_tt = (ACK_t(4) + data_t(4) + SIFS +6+ backoff) * (D / d_max(4)) +(ACK_t(3) + data_t(3) + SIFS +6+ backoff) * (D / d_max(4)) ; %最初18Mbpsで送信し再送は12Mbps
     throughput_fixed(j) = packet / total_tt; % スループット [Mbps]
 end
 
