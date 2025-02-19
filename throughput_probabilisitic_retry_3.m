@@ -19,6 +19,7 @@ tail = 6; % テイルビット[bit]
 SIFS = 10; % [μs]
 DIFS = 34; % [μs]
 backoff = 101.5; % 平均バックオフ制御時間 [μs]
+backoff_2= 173.5;% 衝突時平均バックオフ制御時間 [μs]
 max_distance = 1000; % 最大距離 [m]
 N_max = max_distance / 50; % 最大端末数
 
@@ -120,7 +121,7 @@ for k=0:100%誤り率
             p = rand;
             D = distances(j);
             if p < (k/100)
-                total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS +6+ backoff) + (ACK_t(3) + data_t(3) + SIFS+6 + backoff);
+                total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS +6+ backoff) + (ACK_t(3) + data_t(3) + SIFS+6 + backoff_2);
                 num_times_sent_CONV=num_times_sent_CONV+1;%再送した回数をカウント
             else
                 total_tt = total_tt + (ACK_t(4) + data_t(4) + SIFS +6+ backoff);

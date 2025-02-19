@@ -1,73 +1,97 @@
-% 卒業研究前刷テンプレート
-% lualatex用
-
 \RequirePackage{plautopatch}
 
-\documentclass[a4paper,10.5pt]{ltjsarticle}  % フォントサイズを10.5ptに設定
+\documentclass[a4paper,10pt]{ltjsarticle}
 \usepackage{luatexja}
-\usepackage{enumitem} % リストカスタマイズ用
+
 \usepackage{geometry}
+\usepackage{multicol}
 \usepackage{amsmath}
 \usepackage{titlesec}
-\usepackage{indentfirst}
+\usepackage{tocloft}
+\usepackage{caption}
+\usepackage{flushend}
 \usepackage{graphicx}
 \usepackage{here}
-\usepackage{fancyvrb}
+\usepackage{subfig}
+\usepackage{multirow}
+\usepackage{threeparttable}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{mathptmx}
 
-% 余白設定
+
+
 \geometry{
 top=20mm,
 bottom=20mm,
 left=20mm,
 right=20mm
-}\setlength{\columnsep}{7.5mm}
+}
 
-\linespread{1}  % シングルスペース
+\setlength{\baselineskip}{14pt}
+\setlength{\parindent}{1\zw}
 
-% ページ番号を非表示
-\pagestyle{empty}
+\titleformat{\section}{\large\bfseries}{\thesection.}{1\zw}{}
+\titleformat{\subsection}{\large\bfseries}{\thesubsection.}{1\zw}{}
+\titleformat{\subsubsection}{\large\bfseries}{\thesubsubsection.}{1\zw}{}
 
-\titleformat{\section}{\normalsize}{\thesection}{1em}{}
-\titleformat{\subsection}{\normalsize}{\thesubsection}{1em}{}
-\titlespacing*{\section}{0pt}{1.0ex plus 1ex minus .2ex}{1ex plus .2ex}
-\titlespacing*{\subsection}{0pt}{1.0ex plus 1ex minus .2ex}{0.5ex plus .2ex}
-\DefineVerbatimEnvironment{smallverbatim}{Verbatim}{fontsize=\footnotesize}
-
+\setcounter{tocdepth}{3}
 \makeatletter
- \def\@maketitle{
- \begin{flushright}
- {\large \@date}
- \end{flushright}
- \begin{center}
- {\LARGE \@title \par}
- \end{center}
- \begin{flushright}
- {\@author}
- \end{flushright}
- \par\vskip 1.5em
- }
+\renewcommand{\numberline}[1]{#1.~}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\hfill}
+\renewcommand{\cftsubsubsecleader}{\hfill}
+\cftpagenumbersoff{subsection}
+\cftpagenumbersoff{subsubsection}
 \makeatother
 
-\title{\huge ドローンネットワークにおける直線中継伝送の\\アクセス制御方式の検討\\
-\Large A Study on Access Control Schemes for Rectilinear Relay Transmission \\in Drone Networks
-}
-
-\author{
-T5-25 \:中村　優\\
-指導教員 \: 設樂　勇
-}
-
-\date{}
+\DeclareCaptionFont{designatedFont}{\fontsize{10.5pt}{14pt}\selectfont}
+\captionsetup{font=designatedFont}
 
 \begin{document}
-% タイトル部分は1カラムで表示
-\maketitle
+\fontsize{10.5pt}{14pt}\selectfont
 
+\tableofcontents
+\thispagestyle{empty}
+\clearpage
+
+\setcounter{page}{1}
 % ---------
 % 本文開始
 % ---------
 \section{はじめに}
 ドローンを用いたネットワークにおいて,オーバーリーチの問題を解決するために送信信号の届く中継局まで一度に中継するCTR（Cooperation Through Relay）方式[1]を提案している. 本稿では,提案手法において干渉/誤りが生じた際のスループット特性を従来方式と比較し評価する.
+
+
+\begingroup
+\renewcommand{\rmdefault}{ptm} % Times New Roman に変更
+\begin{table}[h]
+  \caption{Modulation and Coding Table}
+  \centering
+  \renewcommand{\arraystretch}{1.2}
+  \begin{tabular}{c c c c}
+    \toprule
+    TR [Mbps] & Modulation & Coding & Rmin [dBm] \\ 
+    \midrule
+    6  & BPSK  & 1/2  & -82 \\
+    9  & BPSK  & 3/4  & -81 \\
+    12 & QPSK  & 1/2  & -79 \\
+    18 & QPSK  & 3/4  & -77 \\
+    24 & 16QAM & 1/2  & -74 \\
+    36 & 16QAM & 3/4  & -70 \\
+    48 & 64QAM & 2/3  & -66 \\
+    54 & 64QAM & 3/4  & -65 \\
+    \bottomrule
+  \end{tabular}
+  
+  \label{tab:modulation_coding}
+\end{table}
+\endgroup
+
+
 
 \section{従来方式の概要}
 図1に従来方式である概要を示す.従来の中継伝送では1ホップずつ中継するが,自由空間では,伝搬損失が少ないため送信信号が中継先のドローン（図1\#3）より遠くのドローン(図1\#4)に到達することで干渉が生じる.そのため,従来方式はオーバーリーチ干渉によってパケットの再送によってチャネルの利用効率が低下する.また,従来方式で干渉が生じ,再送を行う際には,フォールバック制御により伝送レートを下げることでSNR(Signal to Noise Ratio)が低くてもパケットを受信できるようにしているが,伝送レートの低下に伴って送信時間や再送によるオーバヘッドが増加してしまう課題がある．
