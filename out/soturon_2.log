@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  22 FEB 2025 11:52
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  22 FEB 2025 16:18
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/rsu93/Documents/MATLAB/2024_01卒研/soturon_2.tex
@@ -1326,43 +1326,45 @@ Package luatex.def Info: lfsp_vs_distance_3.pdf  used on input line 392.
 <CTR_topology.pdf, id=167, 2594.69376pt x 431.6125pt>
 File: CTR_topology.pdf Graphic file (type pdf)
 <use CTR_topology.pdf>
-Package luatex.def Info: CTR_topology.pdf  used on input line 410.
+Package luatex.def Info: CTR_topology.pdf  used on input line 411.
 (luatex.def)             Requested size: 483.69687pt x 80.45953pt.
-<CTR_accsess.pdf, id=168, 2100.84875pt x 1363.0925pt>
+<CTR_accsess.pdf, id=168, 2099.845pt x 1364.09625pt>
 File: CTR_accsess.pdf Graphic file (type pdf)
 <use CTR_accsess.pdf>
-Package luatex.def Info: CTR_accsess.pdf  used on input line 423.
-(luatex.def)             Requested size: 483.69687pt x 313.83746pt.
+Package luatex.def Info: CTR_accsess.pdf  used on input line 426.
+(luatex.def)             Requested size: 483.69687pt x 314.21428pt.
  [13
 
 <./CTR_topology.pdf>] [14<./CTR_accsess.pdf>]
-<throughtput_vs_placement_50m_max_distance_3.pdf, id=188, 1204.5pt x 753.81625pt>
+<CTR_model.pdf, id=188, 3590.41376pt x 2222.3025pt>
+File: CTR_model.pdf Graphic file (type pdf)
+<use CTR_model.pdf>
+Package luatex.def Info: CTR_model.pdf  used on input line 455.
+(luatex.def)             Requested size: 483.69687pt x 299.38753pt.
+<throughtput_vs_placement_50m_max_distance_3.pdf, id=189, 1204.5pt x 753.81625pt>
 File: throughtput_vs_placement_50m_max_distance_3.pdf Graphic file (type pdf)
 <use throughtput_vs_placement_50m_max_distance_3.pdf>
-Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3.pdf  used on input line 443.
+Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3.pdf  used on input line 462.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
-<throughtput_vs_placement_50m_max_distance_3_2.pdf, id=189, 1204.5pt x 753.81625pt>
+<throughtput_vs_placement_50m_max_distance_3_2.pdf, id=190, 1204.5pt x 753.81625pt>
 File: throughtput_vs_placement_50m_max_distance_3_2.pdf Graphic file (type pdf)
 <use throughtput_vs_placement_50m_max_distance_3_2.pdf>
-Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3_2.pdf  used on input line 449.
+Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3_2.pdf  used on input line 468.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
  [15
 
-<./throughtput_vs_placement_50m_max_distance_3.pdf>] [16<./throughtput_vs_placement_50m_max_distance_3_2.pdf>]
-
-LaTeX Warning: Reference `throughput_v3' on page 17 undefined on input line 459.
-
-<throughput_probabilistic_retry_v3.pdf, id=208, 1204.5pt x 753.81625pt>
+<./CTR_model.pdf>] [16<./throughtput_vs_placement_50m_max_distance_3.pdf><./throughtput_vs_placement_50m_max_distance_3_2.pdf>]
+<throughput_probabilistic_retry_v3.pdf, id=225, 1204.5pt x 753.81625pt>
 File: throughput_probabilistic_retry_v3.pdf Graphic file (type pdf)
 <use throughput_probabilistic_retry_v3.pdf>
-Package luatex.def Info: throughput_probabilistic_retry_v3.pdf  used on input line 465.
+Package luatex.def Info: throughput_probabilistic_retry_v3.pdf  used on input line 483.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
-<throughput_probabilistic_retry_v3.1.pdf, id=209, 1204.5pt x 753.81625pt>
+<throughput_probabilistic_retry_v3.1.pdf, id=226, 1204.5pt x 753.81625pt>
 File: throughput_probabilistic_retry_v3.1.pdf Graphic file (type pdf)
 <use throughput_probabilistic_retry_v3.1.pdf>
-Package luatex.def Info: throughput_probabilistic_retry_v3.1.pdf  used on input line 471.
+Package luatex.def Info: throughput_probabilistic_retry_v3.1.pdf  used on input line 489.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
-[17
+ [17
 
 <./throughput_probabilistic_retry_v3.pdf>] [18<./throughput_probabilistic_retry_v3.1.pdf>] [19
 
@@ -1377,25 +1379,22 @@ L3 programming layer <2024-02-20>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 )
 
 Here is how much of LuaTeX's memory you used:
- 32669 strings out of 476447
+ 32678 strings out of 476447
  156562,1977958 words of node,token memory allocated
  1551 words of node memory still in use:
    10 hlist, 2 vlist, 5 rule, 3 glue, 4 kern, 1 penalty, 1 glyph, 333 attribute, 95 glue_spec, 41 attribute_list, 2 write, 13 user_defined nodes
-   avail lists: 1:31,2:46161,3:264,4:209,5:111,6:36,7:4973,8:45,9:1938,10:48,11:64
- 53749 multiletter control sequences out of 65536+600000
+   avail lists: 1:31,2:46161,3:264,4:209,5:111,6:36,7:4973,8:45,9:1938,10:51,11:64
+ 53756 multiletter control sequences out of 65536+600000
  101 fonts using 48700719 bytes
  125i,13n,128p,1961b,626s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/Windows/Fonts/times.ttf>{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on soturon_2.pdf (21 pages, 632262 bytes).
+Output written on soturon_2.pdf (21 pages, 663320 bytes).
 
-PDF statistics: 290 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
+PDF statistics: 307 PDF objects out of 1000 (max. 8388607)
+ 192 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
