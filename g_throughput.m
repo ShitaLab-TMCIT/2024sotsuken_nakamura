@@ -35,10 +35,11 @@ for i = 1:length(TR)
 end
 
 % プロット
-% プロット
-figure;
+
+figure('Position', [100, 100, 800, 500]); % ウィンドウサイズ指定
+hold on;
 plot(TR, throughput, '-o', 'Color', 'b', 'LineWidth', 2, 'MarkerSize', 4, 'MarkerFaceColor', 'b');
-xlabel('TR [Mbps]','FontSize', 18, 'FontName', 'Times New Roman');
+xlabel('Transmission rate [Mbps]','FontSize', 18, 'FontName', 'Times New Roman');
 ylabel('throughput [Mbps]','FontSize', 18, 'FontName', 'Times New Roman');
 
 % 目盛りのフォントサイズ設定

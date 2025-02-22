@@ -116,7 +116,7 @@ xticks(1:length(TR)); % x軸を等間隔の整数インデックスに設定
 xticklabels(arrayfun(@(x) sprintf('%d ', x), TR, 'UniformOutput', false)); % カスタムラベルを設定
 
 % グラフのラベルとタイトル設定
-xlabel('Transfer Rate[Mbps]'); % 任意のラベル
+xlabel('Transmission rate[Mbps]'); % 任意のラベル
 ylabel('Time [ms]');
 
 grid off;
@@ -143,4 +143,6 @@ for i = 1:length(TR)
         end
     end
 end
+legend({'Overhead', 'Payload'}, 'FontSize', 18, 'FontName', 'Times New Roman', 'Location', 'northwest','Box', 'off'); % 凡例の設定
+
 hold off;

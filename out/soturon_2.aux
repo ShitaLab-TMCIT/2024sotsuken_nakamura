@@ -1,13 +1,14 @@
 \relax 
 \@writefile{toc}{\contentsline {section}{\numberline {1}はじめに}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.1}研究の目的と方法}{1}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}研究の背景}{1}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}本稿の構成}{1}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2}計算手法}{2}{}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.1}無線LANシステムにおける変調方式と伝送レート}{2}{}\protected@file@percent }
 \@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces IEEE802.11gで使用される変調方式・符号化率と最低受信感度($R_{\text  {min}}$)および伝送レート(TR)の関係}}{2}{}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{tab:IEEE802.11g_TR&Modulation}{{1}{2}{無線LANシステムにおける変調方式と伝送レート}{}{}}
-\newlabel{eq:lfsp}{{2}{2}{無線LANシステムにおける変調方式と伝送レート}{}{}}
+\newlabel{eq:friis}{{2}{2}{無線LANシステムにおける変調方式と伝送レート}{}{}}
+\newlabel{eq:lfsp}{{3}{2}{無線LANシステムにおける変調方式と伝送レート}{}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces 送受信局間の距離に対する受信電力}}{3}{}\protected@file@percent }
 \newlabel{fig:Received power_vs_distance}{{1}{3}{無線LANシステムにおける変調方式と伝送レート}{}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces 伝送レートと距離の関係}}{4}{}\protected@file@percent }
@@ -16,29 +17,40 @@
 \newlabel{fig:lfsp_vs_distance_2}{{3}{4}{無線LANシステムにおける変調方式と伝送レート}{}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces 各伝送レートと距離の関係}}{5}{}\protected@file@percent }
 \newlabel{fig:rate_vs_distance_2}{{4}{5}{無線LANシステムにおける変調方式と伝送レート}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}CSMA/CA方式}{5}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}IEEE802.11gのスループット}{6}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces IPレベルのスループットの計算モデル}}{6}{}\protected@file@percent }
-\newlabel{fig:11g_packet}{{5}{6}{IEEE802.11gのスループット}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces IEEE802.11gのフレームフォーマットと計算式}}{7}{}\protected@file@percent }
-\newlabel{fig:11g_frameformat}{{6}{7}{IEEE802.11gのスループット}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3}従来方式の概要→1章の課題と同じかも}{8}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces 従来の方式の概要}}{8}{}\protected@file@percent }
-\newlabel{fig:従来の方式のトポロジー}{{7}{8}{従来方式の概要→1章の課題と同じかも}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}CTR方式の概要}{9}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces CTR方式の概要}}{9}{}\protected@file@percent }
-\newlabel{fig:CTR方式のトポロジー}{{8}{9}{CTR方式の概要}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces CTR方式のアクセス制御}}{10}{}\protected@file@percent }
-\newlabel{fig:CTR方式のアクセス制御}{{9}{10}{CTR方式の概要}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}CTR方式の評価}{11}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}誤りが無い条件でのCTR方式の評価}{11}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces CTR方式のスループット特性}}{11}{}\protected@file@percent }
-\newlabel{fig:throughput_through}{{10}{11}{誤りが無い条件でのCTR方式の評価}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}誤りを生じる条件でのCTR方式の評価}{11}{}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces 誤り率に対するスループット特性}}{12}{}\protected@file@percent }
-\newlabel{fig:throughput_v3}{{11}{12}{誤りを生じる条件でのCTR方式の評価}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces 誤り率に対しての平均送信回数の変化}}{13}{}\protected@file@percent }
-\newlabel{fig:throughput_v3.1}{{12}{13}{誤りを生じる条件でのCTR方式の評価}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {6}おわりに}{14}{}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {7}今後の課題}{14}{}\protected@file@percent }
-\gdef \@abspage@last{15}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}CSMA/CA方式}{6}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces CSMA/CA方式のアクセス制御}}{6}{}\protected@file@percent }
+\newlabel{fig:CSMA/CA}{{5}{6}{CSMA/CA方式}{}{}}
+\newlabel{eq:CW}{{5}{6}{CSMA/CA方式}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces DCF制御}}{8}{}\protected@file@percent }
+\newlabel{fig:DCF}{{6}{8}{CSMA/CA方式}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}IEEE802.11gのスループット}{9}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces IPレベルのスループットの計算モデル}}{9}{}\protected@file@percent }
+\newlabel{fig:11g_packet}{{7}{9}{IEEE802.11gのスループット}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces IEEE802.11gの計算式}}{10}{}\protected@file@percent }
+\newlabel{fig:11g_frameformat}{{8}{10}{IEEE802.11gのスループット}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces ショート・スロット・タイム使用時のIPレベルのスループット}}{11}{}\protected@file@percent }
+\newlabel{fig:11g_throughput}{{9}{11}{IEEE802.11gのスループット}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}従来方式の概要→1章の課題と同じかも}{12}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces 従来の方式の概要}}{12}{}\protected@file@percent }
+\newlabel{fig:conventional_topology}{{10}{12}{従来方式の概要→1章の課題と同じかも}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces 距離に対する受信電力特性}}{12}{}\protected@file@percent }
+\newlabel{fig:lfsp_vs_distance_3}{{11}{12}{従来方式の概要→1章の課題と同じかも}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}CTR方式の概要}{13}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces CTR方式の概要}}{13}{}\protected@file@percent }
+\newlabel{fig:CTR_topology}{{12}{13}{CTR方式の概要}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces CTR方式のアクセス制御}}{14}{}\protected@file@percent }
+\newlabel{fig:CTR_accsess}{{13}{14}{CTR方式の概要}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}従来方式とCTR方式の評価と比較}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}誤りが無い条件でのCTR方式の評価}{15}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces CTR方式と従来方式のスループット特性}}{15}{}\protected@file@percent }
+\newlabel{fig:throughput_through}{{14}{15}{誤りが無い条件でのCTR方式の評価}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces オーバヘッドとペイロードの送信時間の関係}}{16}{}\protected@file@percent }
+\newlabel{fig:overhead_vs_paylord}{{15}{16}{誤りが無い条件でのCTR方式の評価}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}誤りを生じる条件でのCTR方式の評価}{17}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces 誤り率に対するスループット特性}}{17}{}\protected@file@percent }
+\newlabel{fig:throughput_v3}{{16}{17}{誤りを生じる条件でのCTR方式の評価}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {17}{\ignorespaces 誤り率に対しての平均送信回数の変化}}{18}{}\protected@file@percent }
+\newlabel{fig:throughput_v3.1}{{17}{18}{誤りを生じる条件でのCTR方式の評価}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}おわりに}{19}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}今後の課題}{20}{}\protected@file@percent }
+\gdef \@abspage@last{21}
