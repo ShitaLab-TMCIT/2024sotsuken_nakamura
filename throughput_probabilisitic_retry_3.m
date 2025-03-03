@@ -153,10 +153,10 @@ plot(0:100, throughput_CTR_1000m_all, 'r-', 'LineWidth', 2); % CTR scheme (赤)
 
 % 軸ラベルやタイトルを追加
 xlabel('Error Rate [%]');
-ylabel('Throughput [Mbps]', 'FontSize', 30, 'FontName', 'Times New Roman');
+ylabel('Throughput [Mbps]', 'FontSize', 20, 'FontName', 'Times New Roman');
 
 % 軸のフォントサイズ
-set(gca, 'FontSize', 18, 'FontName', 'Times New Roman');
+set(gca, 'FontSize', 20, 'FontName', 'Times New Roman');
 grid off; % グリッド表示
 box on; % 枠表示
 
@@ -177,10 +177,10 @@ plot(0:100, num_times_sent_CTR_all, 'r-', 'LineWidth', 2); % CTR scheme (赤)
 
 % 軸ラベルやタイトルを追加
 xlabel('Error Rate [%]');
-ylabel('Transmission Count', 'FontSize', 30, 'FontName', 'Times New Roman');
+ylabel('Transmission Count', 'FontSize', 20, 'FontName', 'Times New Roman');
 
 % 軸のフォントサイズ
-set(gca, 'FontSize', 18, 'FontName', 'Times New Roman');
+set(gca, 'FontSize', 20, 'FontName', 'Times New Roman');
 grid off; % グリッド表示
 box on; % 枠表示
 

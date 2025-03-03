@@ -25,7 +25,7 @@ xlabel('Distance [m]', 'FontSize', 20, 'FontName', 'Times New Roman');
 ylabel('Received Power [dBm]', 'FontSize', 20, 'FontName', 'Times New Roman');
 
 % 軸の設定
-set(gca, 'FontSize', 16, 'FontName', 'Times New Roman');
+set(gca, 'FontSize', 20, 'FontName', 'Times New Roman');
 grid off; % グリッドを表示
 box on; % 枠線を表示
 

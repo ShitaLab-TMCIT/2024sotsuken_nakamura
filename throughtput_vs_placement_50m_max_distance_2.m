@@ -109,7 +109,9 @@ hold off;
 
 % フィギュア2: オーバーヘッドとペイロード時間の積み上げ棒グラフ
 figure('Position', [100, 100, 800, 500]); % 横長のグラフ (幅800, 高さ500)
-b = bar(1:length(TR), [overhead', payload'], 'stacked', 'BarWidth', 0.3); % 等間隔の整数インデックスを使用
+b = bar(1:length(TR), [overhead', payload'], 'stacked', 'BarWidth', 0.3);
+b(1).FaceColor = [0, 0.4470, 0.7410]; % オーバーヘッドを青
+b(2).FaceColor = [0.7500, 0.3250, 0.0580]; % ペイロードをオレンジ
 
 % x軸のラベルを設定（例として伝送レートを表示）
 xticks(1:length(TR)); % x軸を等間隔の整数インデックスに設定
@@ -117,12 +119,12 @@ xticklabels(arrayfun(@(x) sprintf('%d ', x), TR, 'UniformOutput', false)); % カ
 
 % グラフのラベルとタイトル設定
 xlabel('Transmission rate[Mbps]'); % 任意のラベル
-ylabel('Time [ms]');
+ylabel('Total transmission time [ms]');
 
 grid off;
 
 % 目盛りのフォントサイズ設定
-set(gca, 'FontSize', 18, 'FontName', 'Times New Roman'); % 目盛り数字を大きく設定し、フォントを指定
+set(gca, 'FontSize', 20, 'FontName', 'Times New Roman'); % 目盛り数字を大きく設定し、フォントを指定
 
 
 % 各ペイロードバーの部分にN-1等分の線を引く
@@ -143,6 +145,6 @@ for i = 1:length(TR)
         end
     end
 end
-legend({'Overhead', 'Payload'}, 'FontSize', 18, 'FontName', 'Times New Roman', 'Location', 'northwest','Box', 'off'); % 凡例の設定
+legend({'Overhead transmission time', 'Payload tansmission time'}, 'FontSize', 20, 'FontName', 'Times New Roman', 'Location', 'northwest','Box', 'off'); % 凡例の設定
 
 hold off;

@@ -149,8 +149,8 @@
       >35</text
     ></g
     ><g transform="translate(137.0667,471.4996) rotate(-90)" style="font-size:52.8px; fill:rgb(38,38,38); text-rendering:geometricPrecision; image-rendering:optimizeQuality; color-rendering:optimizeQuality; font-family:'Times New Roman'; stroke:rgb(38,38,38); color-interpolation:linearRGB;"
-    ><text x="-200.5" xml:space="preserve" y="-11" style="stroke:none;"
-      >throughput [Mbps]</text
+    ><text x="-209" xml:space="preserve" y="-11" style="stroke:none;"
+      >Throughput [Mbps]</text
     ></g
     ><g style="stroke-linecap:butt; fill:blue; text-rendering:geometricPrecision; image-rendering:optimizeQuality; color-rendering:optimizeQuality; stroke-linejoin:round; stroke:blue; color-interpolation:linearRGB; stroke-width:5.3333;"
     ><path d="M332 746.2692 L394 691.6226 L456 640.9556 L580 547.9462 L704 469.0481 L952 330.145 L1200 222.9568 L1324 169.9622" style="fill:none; fill-rule:evenodd;"

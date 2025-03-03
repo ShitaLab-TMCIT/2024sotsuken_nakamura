@@ -39,8 +39,8 @@ end
 figure('Position', [100, 100, 800, 500]); % ウィンドウサイズ指定
 hold on;
 plot(TR, throughput, '-o', 'Color', 'b', 'LineWidth', 2, 'MarkerSize', 4, 'MarkerFaceColor', 'b');
-xlabel('Transmission rate [Mbps]','FontSize', 18, 'FontName', 'Times New Roman');
-ylabel('throughput [Mbps]','FontSize', 18, 'FontName', 'Times New Roman');
+xlabel('Transmission rate [Mbps]','FontSize', 20, 'FontName', 'Times New Roman');
+ylabel('Throughput [Mbps]','FontSize', 20, 'FontName', 'Times New Roman');
 
 % 目盛りのフォントサイズ設定
 set(gca, 'FontSize', 18, 'FontName', 'Times New Roman'); % 目盛り数字を大きく設定し、フォントを指定

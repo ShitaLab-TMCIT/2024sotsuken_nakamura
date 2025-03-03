@@ -1,0 +1,174 @@
+
+% 卒業研究前刷テンプレート
+% lualatex用
+
+\RequirePackage{plautopatch}
+
+\documentclass[a4paper,10pt]{ltjsarticle}
+\usepackage{luatexja}
+\usepackage{enumitem} % リストカスタマイズ用
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{amsmath}
+\usepackage{titlesec}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+\usepackage{here}
+\usepackage{fancyvrb}
+
+\geometry{
+top=20mm,
+bottom=20mm,
+left=20mm,
+right=20mm
+}\setlength{\columnsep}{7.5mm}
+
+\linespread{0.8}
+
+% ページ番号を非表示
+\pagestyle{empty}
+
+\titleformat{\section}{\normalsize}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize}{\thesubsection}{1em}{}
+\titlespacing*{\section}{0pt}{1.0ex plus 1ex minus .2ex}{1ex plus .2ex}
+\titlespacing*{\subsection}{0pt}{1.0ex plus 1ex minus .2ex}{0.5ex plus .2ex}
+\DefineVerbatimEnvironment{smallverbatim}{Verbatim}{fontsize=\footnotesize}
+
+\makeatletter
+ \def\@maketitle{
+ \begin{flushright}
+ {\large \@date}
+ \end{flushright}
+ \begin{center}
+ {\LARGE \@title \par}
+ \end{center}
+ \begin{flushright}
+ {\@author}
+ \end{flushright}
+ \par\vskip 1.5em
+ }
+\makeatother
+
+\title{\huge ドローンネットワークにおける直線中継伝送の\\アクセス制御方式の検討\\
+\Large A Study on Access Control Schemes for Rectilinear Relay Transmission \\in Drone Networks
+}
+
+\author{
+T5-25 \:中村　優\\
+指導教員 \: 設樂　勇
+}
+
+\date{}
+
+\begin{document}
+% タイトル部分は1カラムで表示
+\twocolumn[
+\maketitle
+]
+
+% ---------
+% 本文開始
+% ---------
+\section{はじめに}
+ドローンを用いたネットワークにおいて，オーバーリーチの問題を解決するために送信信号の届く中継局まで一度に中継するCTR（Cooperation Through Relay）方式[1]を提案している．本稿では，提案手法において干渉/誤りが生じた際のスループット特性を従来方式と比較し評価する．
+
+\section{従来方式の概要}
+図1に従来方式の概要を示す．従来の中継伝送では1ホップずつ中継するが，自由空間では，伝搬損失が少ないため送信信号が中継先のドローン（図1\#3）より遠くのドローン(図1\#4)に到達することで干渉が生じる．
+そのため，従来方式はオーバーリーチ干渉によってパケットの再送によってチャネルの利用効率が低下する．
+また，従来方式で干渉が生じ，再送を行う際には，フォールバック制御により伝送レートを下げることでSNR(Signal to Noise Ratio)が低くてもパケットを受信できるようにしているが，伝送レートの低下に伴って送信時間や再送によるオーバヘッドが増加してしまう課題がある．
+%伝送レート　受信感度　SN比　本番では説明
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{fig1.pdf} % 図のファイル名を指定
+  \caption{従来の方式の概要}
+
+\end{figure}
+
+\section{CTR方式の概要}
+オーバリーチ干渉は送信信号が中継局のドローンを超えて他のドローンに干渉することで発生する．
+そこでCTR方式では直線状に存在する中継局が協調することによってオーバリーチ干渉の問題を解決する．
+図2に示すCTR方式は，送信信号の届く範囲の最終中継局（図2\#4）まで一度に信号を送信し，通信経路の中継局（図2\#3）も協調してパケットを受信する．
+最終中継局がパケットを正常に受信した場合は，以後，同様の手順で中継する．
+最終中継局がパケットの受信に失敗した場合は，直線経路の中継局\#3が\#4の代わりに次の中継局へパケットを中継する．
+そのため従来方式ではオーバーリーチ干渉が生じる環境でも，CTR方式ではオーバーリーチ干渉が減り中継ホップ数も減るので中継オーバヘッドも削減することができる．
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{fig2.pdf} 
+  \caption{CTR方式の概要}
+
+\end{figure}
+図3にCTR方式の詳細なアクセス制御手順を示す．本方式では，最終中継局がパケットを受信できなかった場合でも中継を継続できる仕組みが導入されている．
+送信局がランダムなバックオフ時間の後，ACK（Acknowledgement）durationを記述したパケットを送信する．
+パケットを受信した中継局は，指定されたACK duration後に送信局へACKを返信する．ACK durationはスロットタイムで区切られ，最終受信中継局が最短のACK durationを持ち，送信局に近づくにつれてスロットタイムが1ずつ増加する設計となっている．
+これは送信電力の制御や，各端末のSNR（Signal-to-Noise Ratio）および受信電力閾値に基づく自律的な判断を行い信号が到達する最大範囲を推定することでスロットタイムが適切に設定される仕組みとなっている．
+具体的には，図3\#4がパケットを受信した場合，スロットタイムは受信電力より\#3，\#2の順番で増加し，送信局の\#1にACKを返信すると，経路上の中継局である\#2,\#3はACKの送信待ちをキャンセルする．
+最終受信中継局（図3\#4）がパケットの受信に失敗した場合は\#3が送信局の\#1にACKを送信し，\#4の代わりとして中継を続行する．
+これにより，従来方式の再送でのオーバーヘッドの増加や，フォールバック制御による伝送レートの低下を防ぐことができる．
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{fig3.pdf} 
+  \caption{CTR方式のアクセス制御}
+
+\end{figure}
+\section{CTR方式の評価}
+\subsection{誤りが無い条件でのCTR方式の評価}
+CTR方式の特徴である中継局をスルーする特性を以下の条件で従来方式と比較する．
+中継の総伝送距離は1000mとし，50m間隔で直線状に20台のドローンを配置した．アンテナの送受信利得は0dBi，送信電力は10dBmとした．
+周波数は2.4GHz，伝送レートはIEEE 802.11gを参考にし，伝搬損失は自由空間伝搬損失とした．
+評価内容は従来の1ホップ中継(54Mbps) と中継局を2台スルー(24Mbps) した場合，および中継局を3台スルー(18Mbps) した場合におけるスループット特性を確認する．
+括弧内は使用可能な最も高い伝送レートである．これは受信電力よりIEEE 802.11gのMCS (Modulation and Coding Scheme) indexから選択する．
+\\　図4にCTR方式のスループット特性を示す．従来の1ホップ中継と比べてCTR方式で中継局を3台スルーした条件では約2倍のスループットが得られた．
+ドローンをスルーする場合は，通信距離が長くなり使用可能な伝送レートが低下するが，アクセス制御やプリアンブル等のオーバヘッドとのトレードオフになる．
+その結果，ネットワーク全体の通信効率において，中継局を3台スルーする条件が最も高くなることを確認した．
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{fig4.pdf} 
+  \caption{CTR方式のスループット特性}
+  \label{fig:throughput_through} 
+\end{figure}
+\subsection{誤りが生じる条件でのCTR方式の評価}%説明の順番　表現
+CTR方式のもう一つの特徴は，中継時に誤りが発生した場合，経路上の中継局が代替して中継を行うことにより，従来方式と比較してスループットが向上する点である．
+この特性を，4.1の条件に基づいて従来方式と比較する．
+伝送レートは4.1の評価結果に基づき，18Mbpsとする．
+誤りが生じた際，従来方式ではフォールバック制御により伝送レートを1つ下の12Mbpsに変更し，その後の再送信は必ず成功するとする．
+これに対して，CTR方式では，誤りが生じた際，正しく受信できなかった中継局の1つ手前の中継局が必ず代替して中継できるとする．
+この時パケットの誤り率を0\%から100\%まで1\%ずつ変化させたときの従来方式とCTR方式の1000m地点での最終的なスループット特性を比較した．
+\\　図5に誤り率が変化したときスループットを示す．
+この結果から，誤り率が増加するほど従来方式よりスループットが高くなっているため，従来方式よりもCTR方式は干渉等によって局所的に誤り率が上がる条件(受信局)でも高効率に中継伝送が可能なことを確認した．
+また，誤り率が増加するにつれて従来方式とCTR方式のスループットは減少しているが，CTR方式では誤り率によってスループットが緩やかに減少する部分がある．これはパケットの送信回数が関係していると考える．
+図6には誤り率に対しての平均送信回数を示す．
+図6より従来方式の送信回数は誤り率に対して線形的に増加しているが，CTR方式の送信回数は線形的には増加していない．
+これは，CTR方式で誤りが生じた際に，一つ前の中継局が通信を代替するからで，その結果，パケットの誤り率が増加しても送信回数の増加は緩やかに抑えられる．
+この送信回数の低減により，CTR方式のスループットは従来の方式と比較して減少が緩やかになる部分があると考えた．
+%従来は徐々に減少　CTRは減少率が一定ではない　減少する特性は同じ
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{fig5.pdf} 
+  \caption{誤り率に対するスループット特性}
+
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\linewidth]{fig6.pdf} 
+  \caption{誤り率に対する平均送信回数の変化}
+
+\end{figure}
+
+\section{まとめ}
+本稿では，直線に配置されたドローン中継伝送におけるオーバリーチ干渉の影響を解決するために，送信信号の届く中継局まで一回で中継するCTR方式を検討した．
+CTR方式と従来の方式で誤りが無い条件と生じた条件のスループット特性を計算し比較した．
+この結果からいずれの条件でもCTR方式が従来方式よりも高いスループットが得られることを確認した．
+
+\begin{thebibliography}{99}
+  \bibitem{ref1}設樂，他，“ドローンの直線中継伝送におけるアクセス制御方式の一検討,” 電子情報通信学会大会講演論文 B-11-2,2018年9月
+\end{thebibliography}
+
+% ---------
+% 文献リスト
+% ---------
+%\bibliography{arxiv} % bibファイルを指定 (例: arxiv.bib)
+%\bibliographystyle{junsrt}
+
+\end{document}

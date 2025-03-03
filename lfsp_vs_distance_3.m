@@ -35,7 +35,7 @@ xlabel('Distance [m] ', 'FontSize', 20, 'FontName', 'Times New Roman');
 ylabel('Received Power [dBm]', 'FontSize', 20, 'FontName', 'Times New Roman');
 
 % 軸の設定
-set(gca, 'FontSize', 16, 'FontName', 'Times New Roman');
+set(gca, 'FontSize', 20, 'FontName', 'Times New Roman');
 grid off; % グリッドを表示
 box on; % 枠線を表示
 
@@ -47,7 +47,7 @@ xticklabels({'1', '10', '100', '1000'}); % 通常の数値で表示
 % y軸の範囲設定
 ylim([-100 -30]);
 
-% 凡例
+% 凡例  
 legend( {'Free space propagation loss', 'Propagation multiplier = 2.6'}, 'FontSize', 20, 'FontName', 'Times New Roman', ...
     'Location', 'northeast', 'Box', 'off'); % 凡例の設定
 

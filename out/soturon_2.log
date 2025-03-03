@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  22 FEB 2025 18:53
+This is LuaHBTeX, Version 1.17.0 (TeX Live 2023)  (format=lualatex 2024.3.4)  3 MAR 2025 12:01
  restricted system commands enabled.
  file:line:error style messages enabled.
 **c:/Users/rsu93/Documents/MATLAB/2024_01卒研/soturon_2.tex
@@ -417,7 +417,9 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (load cache: extra_haranoajigothic-medium.luc))) (c:/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjp-fontspec.sty) (c:/texlive/2023/texmf-dist/tex/luatex/luatexja/addons/luatexja-fontspec-27c.sty
 Package: luatexja-fontspec-27c 2024-02-19 fontspec support of LuaTeX-ja
 \g__ltj_fontspec_altnumber_int=\count287
-)) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
+)) (c:/texlive/2023/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
+Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
+) (c:/texlive/2023/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2023/05/13 v2.17o AMS math features
 \@mathmargin=\skip51
 
@@ -1050,12 +1052,12 @@ Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 ) (c:/texlive/2023/texmf-dist/tex/luatex/luatexja/patches/lltjp-array.sty
 Package: lltjp-array 2019-07-18 Patch to array for LuaTeX-ja
 )
-LaTeX Font Info:    Trying loading font information for TU+ptm on input line 114.
-LaTeX Font Info:    No file TUptm.fd. on input line 114.
+LaTeX Font Info:    Trying loading font information for TU+ptm on input line 116.
+LaTeX Font Info:    No file TUptm.fd. on input line 116.
 
 
 LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
-(Font)              using `TU/lmr/m/n' instead on input line 114.
+(Font)              using `TU/lmr/m/n' instead on input line 116.
 
 
 LaTeX Warning: Unused global option(s):
@@ -1064,30 +1066,30 @@ LaTeX Warning: Unused global option(s):
 (./out/soturon_2.aux)
 \openout1 = soturon_2.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 114.
-LaTeX Font Info:    Trying loading font information for TS1+cmr on input line 114.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 116.
+LaTeX Font Info:    Trying loading font information for TS1+cmr on input line 116.
  (c:/texlive/2023/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 114.
-LaTeX Font Info:    ... okay on input line 114.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 116.
+LaTeX Font Info:    ... okay on input line 116.
  (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count361
@@ -1150,21 +1152,21 @@ Package caption Info: threeparttable package is loaded.
 Package caption Info: End \AtBeginDocument code.
 (load cache: extra_lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 120.
+(Font)              scaled to size 13.31586pt on input line 122.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 120.
+(Font)              scaled to size 13.31586pt on input line 122.
 
 LaTeX Font Warning: Font shape `TU/ptm/b/n' undefined
-(Font)              using `TU/ptm/m/n' instead on input line 120.
+(Font)              using `TU/ptm/m/n' instead on input line 122.
 
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 120.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 120.
+(Font)              scaled to size 13.31586pt on input line 122.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 120.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 122.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 120.
+(Font)              scaled to size 13.31586pt on input line 122.
 (./out/soturon_2.toc
 LaTeX Font Info:    Trying loading font information for OT1+ztmcm on input line 1.
  (c:/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
@@ -1204,25 +1206,20 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 130.
+(Font)              scaled to size 11.09656pt on input line 132.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 130.
+(Font)              scaled to size 11.09656pt on input line 132.
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <12> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 130.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 132.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 130.
+(Font)              scaled to size 11.09656pt on input line 132.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <12> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 130.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 132.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 130.
+(Font)              scaled to size 11.09656pt on input line 132.
  [1
 
-](load cache: extra_lmroman7-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 6.84286pt on input line 165.
-(load cache: extra_lmroman6-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 165.
+]
 luaotfload | cache : Lookup cache loaded from C:/texlive/2023/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load cache: extra_timesnewromanpsmt.luc)(load cache: extra_timesnewromanps-bolditalicmt.luc)(load cache: extra_timesnewromanps-boldmt.luc)(load cache: extra_timesnewromanps-italicmt.luc)
 
 Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
@@ -1251,124 +1248,133 @@ Package fontspec Info: Font family 'TimesNewRoman(0)' created for font 'Times
  [2
 
 ]
-<lfsp_vs_distance.pdf, id=26, 1204.5pt x 753.81625pt>
+<lfsp_vs_distance.pdf, id=25, 1204.5pt x 753.81625pt>
 File: lfsp_vs_distance.pdf Graphic file (type pdf)
 <use lfsp_vs_distance.pdf>
-Package luatex.def Info: lfsp_vs_distance.pdf  used on input line 237.
+Package luatex.def Info: lfsp_vs_distance.pdf  used on input line 250.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
-<rate_vs_distance.pdf, id=27, 1204.5pt x 753.81625pt>
+<rate_vs_distance.pdf, id=26, 1204.5pt x 753.81625pt>
 File: rate_vs_distance.pdf Graphic file (type pdf)
 <use rate_vs_distance.pdf>
-Package luatex.def Info: rate_vs_distance.pdf  used on input line 245.
+Package luatex.def Info: rate_vs_distance.pdf  used on input line 258.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
  [3<./lfsp_vs_distance.pdf>]
-<lfsp_vs_distance_2.pdf, id=37, 1204.5pt x 753.81625pt>
+<lfsp_vs_distance_2.pdf, id=36, 1204.5pt x 753.81625pt>
 File: lfsp_vs_distance_2.pdf Graphic file (type pdf)
 <use lfsp_vs_distance_2.pdf>
-Package luatex.def Info: lfsp_vs_distance_2.pdf  used on input line 252.
+Package luatex.def Info: lfsp_vs_distance_2.pdf  used on input line 265.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
-<rate_vs_distance_2.pdf, id=38, 1204.5pt x 753.81625pt>
+<rate_vs_distance_2.pdf, id=37, 1204.5pt x 753.81625pt>
 File: rate_vs_distance_2.pdf Graphic file (type pdf)
 <use rate_vs_distance_2.pdf>
-Package luatex.def Info: rate_vs_distance_2.pdf  used on input line 259.
+Package luatex.def Info: rate_vs_distance_2.pdf  used on input line 272.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
  [4<./rate_vs_distance.pdf><./lfsp_vs_distance_2.pdf>] [5<./rate_vs_distance_2.pdf>]
-<CSMACA.pdf, id=63, 2120.92375pt x 1228.59pt>
+<CSMACA.pdf, id=62, 2120.92375pt x 1228.59pt>
 File: CSMACA.pdf Graphic file (type pdf)
 <use CSMACA.pdf>
-Package luatex.def Info: CSMACA.pdf  used on input line 276.
+Package luatex.def Info: CSMACA.pdf  used on input line 291.
 (luatex.def)             Requested size: 483.69687pt x 280.18892pt.
+(load cache: extra_lmroman7-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 6.84286pt on input line 304.
+(load cache: extra_lmroman6-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 5.54828pt on input line 304.
  [6
 
 <./CSMACA.pdf>]
-<DCF.pdf, id=73, 3604.46625pt x 2747.26375pt>
+<DCF.pdf, id=72, 3604.46625pt x 2747.26375pt>
 File: DCF.pdf Graphic file (type pdf)
 <use DCF.pdf>
-Package luatex.def Info: DCF.pdf  used on input line 315.
+Package luatex.def Info: DCF.pdf  used on input line 335.
 (luatex.def)             Requested size: 483.69687pt x 368.64285pt.
  [7] [8<./DCF.pdf>]
-<11g_packet.pdf, id=99, 3158.80125pt x 675.52374pt>
+<11g_packet.pdf, id=98, 3158.80125pt x 675.52374pt>
 File: 11g_packet.pdf Graphic file (type pdf)
 <use 11g_packet.pdf>
-Package luatex.def Info: 11g_packet.pdf  used on input line 341.
+Package luatex.def Info: 11g_packet.pdf  used on input line 362.
 (luatex.def)             Requested size: 483.69687pt x 103.43726pt.
  [9
 
 <./11g_packet.pdf>]
-<11g_frameformat.pdf, id=116, 3280.255pt x 3234.0825pt>
+<11g_frameformat.pdf, id=115, 3360.555pt x 3492.04625pt>
 File: 11g_frameformat.pdf Graphic file (type pdf)
 <use 11g_frameformat.pdf>
-Package luatex.def Info: 11g_frameformat.pdf  used on input line 349.
-(luatex.def)             Requested size: 483.69687pt x 476.85033pt.
- [10<./11g_frameformat.pdf>]
-<g_throughput.pdf, id=134, 844.15375pt x 633.36626pt>
+Package luatex.def Info: 11g_frameformat.pdf  used on input line 370.
+(luatex.def)             Requested size: 483.69687pt x 502.57721pt.
+ [10
+
+<./11g_frameformat.pdf>]
+<g_throughput.pdf, id=145, 1204.5pt x 753.81625pt>
 File: g_throughput.pdf Graphic file (type pdf)
 <use g_throughput.pdf>
-Package luatex.def Info: g_throughput.pdf  used on input line 356.
-(luatex.def)             Requested size: 483.69687pt x 362.9264pt.
+Package luatex.def Info: g_throughput.pdf  used on input line 377.
+(luatex.def)             Requested size: 483.69687pt x 302.71739pt.
  [11
 
-
 <./g_throughput.pdf>]
-<cenventional_topology.pdf, id=147, 2022.55624pt x 434.62375pt>
+<cenventional_topology.pdf, id=158, 2022.55624pt x 413.545pt>
 File: cenventional_topology.pdf Graphic file (type pdf)
 <use cenventional_topology.pdf>
-Package luatex.def Info: cenventional_topology.pdf  used on input line 385.
-(luatex.def)             Requested size: 483.69687pt x 103.94044pt.
-<lfsp_vs_distance_3.pdf, id=148, 1204.5pt x 753.81625pt>
+Package luatex.def Info: cenventional_topology.pdf  used on input line 407.
+(luatex.def)             Requested size: 483.69687pt x 98.89944pt.
+<lfsp_vs_distance_3.pdf, id=159, 1204.5pt x 753.81625pt>
 File: lfsp_vs_distance_3.pdf Graphic file (type pdf)
 <use lfsp_vs_distance_3.pdf>
-Package luatex.def Info: lfsp_vs_distance_3.pdf  used on input line 392.
+Package luatex.def Info: lfsp_vs_distance_3.pdf  used on input line 414.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
  [12
 
 <./cenventional_topology.pdf><./lfsp_vs_distance_3.pdf>]
-<CTR_topology.pdf, id=167, 2594.69376pt x 431.6125pt>
+<CTR_topology.pdf, id=179, 2022.55624pt x 406.51875pt>
 File: CTR_topology.pdf Graphic file (type pdf)
 <use CTR_topology.pdf>
-Package luatex.def Info: CTR_topology.pdf  used on input line 411.
-(luatex.def)             Requested size: 483.69687pt x 80.45953pt.
-<CTR_accsess.pdf, id=168, 2099.845pt x 1364.09625pt>
+Package luatex.def Info: CTR_topology.pdf  used on input line 433.
+(luatex.def)             Requested size: 483.69687pt x 97.21912pt.
+<CTR_accsess.pdf, id=180, 2099.845pt x 1364.09625pt>
 File: CTR_accsess.pdf Graphic file (type pdf)
 <use CTR_accsess.pdf>
-Package luatex.def Info: CTR_accsess.pdf  used on input line 426.
+Package luatex.def Info: CTR_accsess.pdf  used on input line 450.
 (luatex.def)             Requested size: 483.69687pt x 314.21428pt.
  [13
 
 <./CTR_topology.pdf>] [14<./CTR_accsess.pdf>]
-<CTR_model.pdf, id=188, 3590.41376pt x 2222.3025pt>
+<CTR_model.pdf, id=199, 3590.41376pt x 2222.3025pt>
 File: CTR_model.pdf Graphic file (type pdf)
 <use CTR_model.pdf>
-Package luatex.def Info: CTR_model.pdf  used on input line 455.
+Package luatex.def Info: CTR_model.pdf  used on input line 479.
 (luatex.def)             Requested size: 483.69687pt x 299.38753pt.
-<throughtput_vs_placement_50m_max_distance_3.pdf, id=189, 1204.5pt x 753.81625pt>
+<throughtput_vs_placement_50m_max_distance_3.pdf, id=200, 1204.5pt x 753.81625pt>
 File: throughtput_vs_placement_50m_max_distance_3.pdf Graphic file (type pdf)
 <use throughtput_vs_placement_50m_max_distance_3.pdf>
-Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3.pdf  used on input line 462.
+Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3.pdf  used on input line 486.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
-<throughtput_vs_placement_50m_max_distance_3_2.pdf, id=190, 1204.5pt x 753.81625pt>
+<throughtput_vs_placement_50m_max_distance_3_2.pdf, id=201, 1204.5pt x 753.81625pt>
 File: throughtput_vs_placement_50m_max_distance_3_2.pdf Graphic file (type pdf)
 <use throughtput_vs_placement_50m_max_distance_3_2.pdf>
-Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3_2.pdf  used on input line 468.
+Package luatex.def Info: throughtput_vs_placement_50m_max_distance_3_2.pdf  used on input line 492.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
  [15
 
 <./CTR_model.pdf>] [16<./throughtput_vs_placement_50m_max_distance_3.pdf><./throughtput_vs_placement_50m_max_distance_3_2.pdf>]
-<throughput_probabilistic_retry_v3.pdf, id=225, 1204.5pt x 753.81625pt>
+<throughput_probabilistic_retry_v3.pdf, id=239, 1204.5pt x 753.81625pt>
 File: throughput_probabilistic_retry_v3.pdf Graphic file (type pdf)
 <use throughput_probabilistic_retry_v3.pdf>
-Package luatex.def Info: throughput_probabilistic_retry_v3.pdf  used on input line 488.
+Package luatex.def Info: throughput_probabilistic_retry_v3.pdf  used on input line 521.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
-<throughput_probabilistic_retry_v3.1.pdf, id=226, 1204.5pt x 753.81625pt>
+<throughput_probabilistic_retry_v3.1.pdf, id=240, 1204.5pt x 753.81625pt>
 File: throughput_probabilistic_retry_v3.1.pdf Graphic file (type pdf)
 <use throughput_probabilistic_retry_v3.1.pdf>
-Package luatex.def Info: throughput_probabilistic_retry_v3.1.pdf  used on input line 494.
+Package luatex.def Info: throughput_probabilistic_retry_v3.1.pdf  used on input line 527.
 (luatex.def)             Requested size: 483.69687pt x 302.71739pt.
  [17
 
 <./throughput_probabilistic_retry_v3.pdf>] [18<./throughput_probabilistic_retry_v3.1.pdf>] [19
 
 ] [20
+
+] [21
 
 ] (./out/soturon_2.aux)
  ***********
@@ -1382,19 +1388,19 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 )
 
 Here is how much of LuaTeX's memory you used:
- 32678 strings out of 476447
- 156562,1977958 words of node,token memory allocated
- 1551 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 3 glue, 4 kern, 1 penalty, 1 glyph, 333 attribute, 95 glue_spec, 41 attribute_list, 2 write, 13 user_defined nodes
-   avail lists: 1:31,2:46161,3:264,4:209,5:111,6:36,7:4973,8:45,9:1938,10:48,11:64
- 53756 multiletter control sequences out of 65536+600000
- 101 fonts using 48700719 bytes
- 125i,13n,128p,1961b,626s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<c:/Windows/Fonts/times.ttf>{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on soturon_2.pdf (21 pages, 663164 bytes).
+ 32710 strings out of 476447
+ 156557,1977958 words of node,token memory allocated
+ 1575 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 3 glue, 4 kern, 1 penalty, 1 glyph, 344 attribute, 95 glue_spec, 42 attribute_list, 2 write, 13 user_defined nodes
+   avail lists: 1:47,2:45566,3:275,4:199,5:85,6:30,7:5229,8:41,9:2238,10:49,11:60
+ 53783 multiletter control sequences out of 65536+600000
+ 99 fonts using 47154783 bytes
+ 125i,14n,128p,1961b,602s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/Windows/Fonts/times.ttf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2023/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2023/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on soturon_2.pdf (22 pages, 705095 bytes).
 
-PDF statistics: 307 PDF objects out of 1000 (max. 8388607)
- 192 compressed objects within 2 object streams
+PDF statistics: 318 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 131072)
  16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

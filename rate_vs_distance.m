@@ -29,8 +29,8 @@ for i = 1:length(d)-1
     y = ones(size(x)) * TR(i);
     plot(x, y, 'b', 'LineWidth', 2);
     
-    % 各伝送レートの上に変調方式と符号化率を追加 (y 座標を少し上げる)
-    text(mean(x), TR(i) + 3, mod_coding{i}, 'FontSize', 13, 'FontName', 'Times New Roman', ...
+
+    text(mean(x)+3, TR(i) + 3, mod_coding{i}, 'FontSize', 13, 'FontName', 'Times New Roman', ...
         'Color', 'k', 'HorizontalAlignment', 'center');
 end
 
@@ -39,13 +39,13 @@ x = linspace(d(end), 0, 100);
 y = ones(size(x)) * TR(end);
 plot(x, y, 'b', 'LineWidth', 2);
 
-% 最後のデータポイントにも変調方式と符号化率を追加
+
 text(mean(x), TR(end) + 3, mod_coding{end}, 'FontSize', 13, 'FontName', 'Times New Roman', ...
     'Color', 'k', 'HorizontalAlignment', 'center');
 
 xlabel('Distance [m]', 'FontSize', 20, 'FontName', 'Times New Roman');
 ylabel('Transmission rate[Mbps]', 'FontSize', 20, 'FontName', 'Times New Roman');
-set(gca, 'FontSize', 16, 'FontName', 'Times New Roman');
+set(gca, 'FontSize', 20, 'FontName', 'Times New Roman');
 grid off;
 box on;
 hold off;

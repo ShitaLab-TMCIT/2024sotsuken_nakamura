@@ -41,7 +41,7 @@ end
 
 xlabel('Distance [m]', 'FontSize', 20, 'FontName', 'Times New Roman');
 ylabel('Transmission rate [Mbps]', 'FontSize', 20, 'FontName', 'Times New Roman');
-set(gca, 'FontSize', 16, 'FontName', 'Times New Roman');
+set(gca, 'FontSize', 20, 'FontName', 'Times New Roman');
 grid off;
 box on;
 
